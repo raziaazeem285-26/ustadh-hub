@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="UstadhHub — find trusted tutors for every subject. Compare verified tutor profiles, book online or home tuition, and start learning on your terms." />
+  <link rel="stylesheet" href="styles.css" />
+  <title>UstadhHub — Find Trusted Tutors</title>
+</head>
+<body>
+  <div class="wrap utility" aria-label="Primary navigation">
+    <a class="brand" href="#top">Ustadh<span>Hub</span></a>
+    <a href="#subjects">Subjects</a><a href="#tutors">Find a tutor</a><a href="#how">How it works</a><a href="#contact">Contact</a>
+    <button class="teach-link" data-open-tutor>Become a tutor</button><button class="join" data-open-draft>Post a requirement</button>
+  </div>
+
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="tag">1-to-1 · Online · Home tuition</span>
+        <h1>Find trusted tutors for every subject.</h1>
+        <p>Tell us what you want to learn. Compare trusted tutor profiles side by side. Then start learning — on your terms, at your pace.</p>
+        <form class="searchbox" id="heroSearch">
+          <div class="field"><label for="subjectInput">Subject</label><input id="subjectInput" placeholder="e.g. Mathematics" autocomplete="off" /></div>
+          <div class="field"><label for="modeInput">Class mode</label><select id="modeInput"><option value="all">Online or home</option><option value="online">Online</option><option value="home">Home tuition</option></select></div>
+          <button type="submit">Find tutors</button>
+        </form>
+        <div class="proof"><span>Clear tutor profiles</span><span>Direct fee discussion</span><span>Choice in your hands</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="subjects" class="wrap">
+      <div class="section-head"><h2>What will you learn today?</h2><p>From school subjects to languages and digital skills — find your next teacher in one place.</p></div>
+      <div class="subject-grid">
+        <button class="subject" data-subject="mathematics"><svg viewBox="0 0 24 24"><path d="M4 5h16M7 3v4M17 3v4M5 12h5v7H5zM14 11l5 8m0-8-5 8"/></svg><span><strong>Mathematics</strong><small> · 240 tutors</small></span></button>
+        <button class="subject" data-subject="physics"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="4" ry="10" transform="rotate(45 12 12)"/></svg><span><strong>Physics</strong><small> · 118 tutors</small></span></button>
+        <button class="subject" data-subject="english"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H8l-4 3zM8 9h8M8 13h5"/></svg><span><strong>English</strong><small> · 195 tutors</small></span></button>
+        <button class="subject" data-subject="quran"><svg viewBox="0 0 24 24"><path d="M3 5c4-1 7 0 9 2 2-2 5-3 9-2v14c-4-1-7 0-9 2-2-2-5-3-9-2zM12 7v14"/></svg><span><strong>Quran &amp; Tajweed</strong><small> · 156 tutors</small></span></button>
+        <button class="subject" data-subject="coding"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><span><strong>Coding</strong><small> · 89 tutors</small></span></button>
+        <button class="subject" data-subject="design"><svg viewBox="0 0 24 24"><path d="M5 19c3-1 4-4 3-7l8-8 4 4-8 8c-3-1-6 0-7 3zM14 6l4 4"/></svg><span><strong>Creative skills</strong><small> · 74 tutors</small></span></button>
+      </div>
+    </section>
+
+    <section class="tutors" id="tutors">
+      <div class="wrap">
+        <div class="section-head"><div><h2>Tutor shortlist</h2><p id="resultLabel">Profiles selected for strong teaching signals and learner fit.</p></div><p>Compare approach, experience and fee before you decide.</p></div>
+        <div class="controls" aria-label="Tutor filters"><button class="pill active" data-filter="all">All tutors</button><button class="pill" data-filter="online">Online</button><button class="pill" data-filter="home">Home tuition</button></div>
+        <div class="tutor-grid" id="tutorGrid">
+          <article class="tutor-card" data-subject="mathematics" data-mode="online home" data-tutor="ayesha">
+            <div class="portrait"><img src="assets/tutor-ayesha.webp" alt="Illustrated portrait of tutor Ayesha Khan" /><span class="score">96% match</span></div>
+            <div class="card-body">
+              <div class="name-row"><h3>Ayesha Khan</h3><span class="rating"><b>★ 4.9</b> (84)</span></div>
+              <div class="role">Mathematics · O/A Levels</div>
+              <p class="bio">Concept-first lessons with weekly progress notes and past-paper practice.</p>
+              <div class="chips"><span class="chip">6 years</span><span class="chip">Online + Home</span><span class="chip">English / Urdu</span></div>
+              <div class="card-foot"><div class="price"><strong>Rs 1,800</strong><small>starting / hour</small></div><button class="view" data-profile="ayesha">View profile →</button></div>
+            </div>
+          </article>
+          <article class="tutor-card" data-subject="physics" data-mode="online" data-tutor="hamza">
+            <div class="portrait"><img src="assets/tutor-hamza.webp" alt="Illustrated portrait of tutor Hamza Qureshi" /><span class="score">92% match</span></div>
+            <div class="card-body">
+              <div class="name-row"><h3>Hamza Qureshi</h3><span class="rating"><b>★ 4.8</b> (61)</span></div>
+              <div class="role">Physics · FSc / A Levels</div>
+              <p class="bio">Visual explanations, derivation drills and focused exam preparation.</p>
+              <div class="chips"><span class="chip">8 years</span><span class="chip">Online</span><span class="chip">English / Urdu</span></div>
+              <div class="card-foot"><div class="price"><strong>Rs 2,200</strong><small>starting / hour</small></div><button class="view" data-profile="hamza">View profile →</button></div>
+            </div>
+          </article>
+          <article class="tutor-card" data-subject="english" data-mode="online home" data-tutor="sana">
+            <div class="portrait"><img src="assets/tutor-sana.webp" alt="Illustrated portrait of tutor Sana Malik" /><span class="score">89% match</span></div>
+            <div class="card-body">
+              <div class="name-row"><h3>Sana Malik</h3><span class="rating"><b>★ 4.9</b> (47)</span></div>
+              <div class="role">English · Spoken &amp; IELTS</div>
+              <p class="bio">Practical speaking sessions with personal feedback and confidence building.</p>
+              <div class="chips"><span class="chip">5 years</span><span class="chip">Online + Home</span><span class="chip">English / Urdu</span></div>
+              <div class="card-foot"><div class="price"><strong>Rs 1,500</strong><small>starting / hour</small></div><button class="view" data-profile="sana">View profile →</button></div>
+            </div>
+          </article>
+          <div class="empty" id="emptyState">No tutors match these filters yet. Try “All tutors”.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="wrap match">
+      <div class="match-copy"><h2>Not just a profile — find your teaching fit.</h2><p>The Ustadh Compass turns your priorities into one simple match score, so shortlisting feels easy.</p>
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><div><h3>Share your goal</h3><p>Pick your subject, class level, mode and preferred fee range.</p></div></div>
+          <div class="step"><span class="step-num">2</span><div><h3>Compare teaching styles</h3><p>Structured practice, patient explanations or fast exam prep — pick your fit.</p></div></div>
+          <div class="step"><span class="step-num">3</span><div><h3>Talk to your shortlist</h3><p>Book a demo lesson, confirm the schedule, then make your choice.</p></div></div>
+        </div>
+      </div>
+      <div class="compass"><span class="mini">USTADH COMPASS · QUICK DEMO</span><h3>What matters most to you?</h3>
+        <div class="question"><label><span>Budget fit</span><output id="budgetOut">70%</output></label><input id="budget" type="range" min="0" max="100" value="70" /></div>
+        <div class="question"><label><span>Exam preparation</span><output id="examOut">85%</output></label><input id="exam" type="range" min="0" max="100" value="85" /></div>
+        <div class="question"><label><span>Schedule flexibility</span><output id="flexOut">55%</output></label><input id="flex" type="range" min="0" max="100" value="55" /></div>
+        <button class="find-match" id="matchBtn">Calculate my match</button>
+        <div class="result" id="matchResult"></div>
+      </div>
+    </section>
+
+    <section id="join" class="wrap">
+      <div class="section-head"><div><h2>Become a tutor on UstadhHub</h2><p>Turn your expertise into income. Set your own subjects, schedule and fee.</p></div><button class="join" data-open-tutor>Create tutor profile</button></div>
+      <div class="join-grid">
+        <div class="join-card"><div class="big">1.</div><h3>Build your profile</h3><p>List your subjects, experience, teaching mode and starting fee in a clean, professional profile.</p></div>
+        <div class="join-card"><div class="big">2.</div><h3>Get discovered</h3><p>Students search by subject and city — your profile appears in front of learners who need exactly what you teach.</p></div>
+        <div class="join-card"><div class="big">3.</div><h3>Teach your way</h3><p>Accept demo lessons, agree the schedule directly, and keep full control of how you teach.</p></div>
+        <div class="join-card"><div class="big">4.</div><h3>Grow your reputation</h3><p>Great teaching earns reviews and ratings, which bring you more students over time.</p></div>
+      </div>
+    </section>
+
+    <div class="wrap cta"><div><h2>Students: post your learning requirement.</h2><p>Class, subject, schedule and budget in one clear brief — download it and share it anywhere.</p></div><button data-open-draft>Create a requirement draft</button></div>
+
+    <section id="contact" class="wrap">
+      <div class="section-head"><div><h2>Talk to us</h2><p>Questions about a tutor, your profile, or a partnership? We reply within one working day.</p></div></div>
+      <div class="contact-grid">
+        <div class="contact-cards">
+          <div class="contact-card"><h3>Email</h3><p><a href="mailto:hello@ustadhhub.com">hello@ustadhhub.com</a></p></div>
+          <div class="contact-card"><h3>Phone / WhatsApp</h3><p><a href="tel:+923000000000">+92 300 000 0000</a></p></div>
+          <div class="contact-card"><h3>Location</h3><p>Karachi, Pakistan · serving students nationwide, online and at home.</p></div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>Your name<input id="contactName" placeholder="Full name" required /></label>
+          <label>Your email<input id="contactEmail" type="email" placeholder="you@example.com" required /></label>
+          <label>Message<textarea id="contactMsg" rows="4" placeholder="How can we help?" required></textarea></label>
+          <button type="submit">Send message</button>
+          <div class="form-status" id="contactStatus" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <a class="brand" href="#top" style="margin:0">Ustadh<span>Hub</span></a>
+      <nav><a href="#subjects">Subjects</a><a href="#tutors">Tutors</a><a href="#join">Become a tutor</a><a href="#contact">Contact</a></nav>
+      <span>© 2026 UstadhHub. Find trusted tutors.</span>
+    </div>
+  </footer>
+  <p class="demo-note">Concept demo: tutor names, reviews, availability and prices shown here are fictional.</p>
+
+  <div class="modal-backdrop" id="profileModal" role="dialog" aria-modal="true" aria-labelledby="profileTitle"><div class="modal">
+    <div class="modal-head"><div><h2 id="profileTitle">Tutor profile</h2><p>A closer look before you decide.</p></div><button class="close" id="closeProfile" aria-label="Close">×</button></div>
+    <div id="profileContent"></div>
+    <div class="actions"><button id="profileRequest">Request a demo lesson</button><button class="secondary" id="profileClose2">Close</button></div>
+  </div></div>
+
+  <div class="modal-backdrop" id="draftModal" role="dialog" aria-modal="true" aria-labelledby="draftTitle"><div class="modal"><div class="modal-head"><div><h2 id="draftTitle">Learning requirement</h2><p>Prepare a shareable brief.</p></div><button class="close" id="closeModal" aria-label="Close">×</button></div><div class="form-grid"><label>Subject<input id="draftSubject" placeholder="Mathematics" /></label><label>Class / level<input id="draftLevel" placeholder="O Level" /></label><label>Preferred mode<select id="draftMode"><option>Online</option><option>Home tuition</option><option>Either</option></select></label><label>Budget<input id="draftBudget" placeholder="Rs 1,500 / hour" /></label><label class="wide">Learning goal<textarea id="draftGoal" rows="3" placeholder="Exam preparation, concepts, spoken fluency..."></textarea></label></div><div class="actions"><button id="downloadDraft">Download brief</button><button class="secondary" id="copyDraft">Copy text</button></div><div class="status" id="draftStatus" aria-live="polite"></div></div></div>
+
+  <div class="modal-backdrop" id="tutorModal" role="dialog" aria-modal="true" aria-labelledby="tutorTitle"><div class="modal"><div class="modal-head"><div><h2 id="tutorTitle">Tutor profile builder</h2><p>Draft your professional teaching profile.</p></div><button class="close" id="closeTutor" aria-label="Close">×</button></div><div class="form-grid"><label>Your name<input id="tutorName" placeholder="Full name" /></label><label>Main subject<input id="tutorSubject" placeholder="Mathematics" /></label><label>Experience<input id="tutorExperience" placeholder="5 years" /></label><label>Teaching mode<select id="tutorMode"><option>Online</option><option>Home tuition</option><option>Online + Home tuition</option></select></label><label>Starting fee<input id="tutorFee" placeholder="Rs 1,500 / hour" /></label><label>Languages<input id="tutorLanguages" placeholder="English, Urdu" /></label><label class="wide">Teaching approach<textarea id="tutorBio" rows="3" placeholder="What makes your lessons effective?"></textarea></label></div><div class="actions"><button id="downloadTutor">Download profile draft</button><button class="secondary" id="copyTutor">Copy text</button></div><div class="status" id="tutorStatus" aria-live="polite"></div></div></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
