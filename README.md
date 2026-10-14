@@ -1,19 +1,23 @@
-# UstadhHub — Find Trusted Online & Home Tutors in Pakistan
+# Razia Azeem Official — Islamic Blog
 
-A TeacherOn-style tutoring marketplace website: students search subjects, compare tutor profiles, calculate a teaching-fit match, post learning requirements, and tutors can build their profiles. Contact section included.
+Razia Azeem's personal Islamic blog website: fresh daily blogs on Quran & Hadith, Islamic stories, duas and motivation.
+Every article is grounded in authentic sources — Quran with surah:ayat references and Hadith with book references.
+Homepage includes the blog teaser grid, a social connect section, and a contact section (email, YouTube, WhatsApp for online classes).
 
-**v2 (Oct 14, 2026):** golden + dark blue professional redesign with Poppins font, full SEO (meta/OG/JSON-LD/sitemap/robots), free AI tools (fee calculator + study planner), rule-based chatbot widget, and a blog with 3 learning guides.
+**v4 (Oct 15, 2026):** blog-only redesign — all tutoring features removed (tutor listings, subject search, Ustadh Compass, AI tools, chatbot, become-a-tutor, requirement drafts). Site rebranded to "Razia Azeem Official".
 
 ## Tech
 
 Plain static site — **no build step**:
 
-- `index.html` — homepage: hero, subjects, tutor listings, Ustadh Compass, AI tools, blog teasers, become-a-tutor, contact
+- `index.html` — homepage: hero, blog teasers, social connect, contact
 - `styles.css` — full styling (golden/navy theme, Poppins, responsive)
-- `app.js` — search filters, tutor profile modal, Ustadh Compass, fee calculator, study planner, chatbot, requirement/profile builders, contact form
+- `app.js` — contact form handler only
 - `blog.html` — blog index
-- `posts/` — 3 SEO-friendly articles (online vs home tuition, choosing an online tutor, online class success tips)
+- `posts/` — SEO-friendly articles
 - `sitemap.xml`, `robots.txt` — SEO
+
+Daily auto-blog pipeline (in `../blog-pipeline/`) publishes new posts via 4 daily crons.
 
 ## Deploy on Vercel (free)
 
@@ -29,7 +33,3 @@ Just open `index.html` in a browser, or run:
 ```bash
 npx serve .
 ```
-
-## Note
-
-Concept demo: tutor names, reviews, availability and prices shown on the site are fictional.
