@@ -1,15 +1,19 @@
-# UstadhHub — Find Trusted Tutors
+# UstadhHub — Find Trusted Online & Home Tutors in Pakistan
 
 A TeacherOn-style tutoring marketplace website: students search subjects, compare tutor profiles, calculate a teaching-fit match, post learning requirements, and tutors can build their profiles. Contact section included.
+
+**v2 (Oct 14, 2026):** golden + dark blue professional redesign with Poppins font, full SEO (meta/OG/JSON-LD/sitemap/robots), free AI tools (fee calculator + study planner), rule-based chatbot widget, and a blog with 3 learning guides.
 
 ## Tech
 
 Plain static site — **no build step**:
 
-- `index.html` — all pages/sections in one file
-- `styles.css` — full styling (light + dark mode, responsive)
-- `app.js` — search filters, tutor profile modal, Ustadh Compass match calculator, requirement/profile builders, contact form
-- `assets/` — hero image + tutor portraits (`.webp`)
+- `index.html` — homepage: hero, subjects, tutor listings, Ustadh Compass, AI tools, blog teasers, become-a-tutor, contact
+- `styles.css` — full styling (golden/navy theme, Poppins, responsive)
+- `app.js` — search filters, tutor profile modal, Ustadh Compass, fee calculator, study planner, chatbot, requirement/profile builders, contact form
+- `blog.html` — blog index
+- `posts/` — 3 SEO-friendly articles (online vs home tuition, choosing an online tutor, online class success tips)
+- `sitemap.xml`, `robots.txt` — SEO
 
 ## Deploy on Vercel (free)
 

@@ -3,23 +3,91 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="color-scheme" content="light dark" />
-  <meta name="description" content="UstadhHub — find trusted tutors for every subject. Compare verified tutor profiles, book online or home tuition, and start learning on your terms." />
+  <title>UstadhHub — Find Trusted Online &amp; Home Tutors in Pakistan</title>
+  <meta name="description" content="UstadhHub helps Pakistani students find trusted online & home tutors. Compare verified profiles, fees and ratings — or use our free fee calculator and study planner." />
+  <meta name="keywords" content="tutors in Pakistan, online tuition Pakistan, home tutor Karachi Lahore Islamabad, find tutor online, O Level tutors, FSc tutors, IELTS tutor, Quran tutor online" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ustadh-hub.vercel.app/" />
+  <meta name="theme-color" content="#0A1A33" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="UstadhHub" />
+  <meta property="og:title" content="UstadhHub — Find Trusted Online &amp; Home Tutors in Pakistan" />
+  <meta property="og:description" content="Compare trusted tutor profiles, fees and ratings. Free fee calculator, study planner and learning guides for Pakistani students." />
+  <meta property="og:url" content="https://ustadh-hub.vercel.app/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="UstadhHub — Find Trusted Online &amp; Home Tutors in Pakistan" />
+  <meta name="twitter:description" content="Compare trusted tutor profiles, fees and ratings. Free fee calculator, study planner and learning guides." />
   <link rel="stylesheet" href="styles.css" />
-  <title>UstadhHub — Find Trusted Tutors</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230A1A33'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='28' fill='%23D4AF37' font-family='sans-serif' font-weight='bold'%3EU%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "UstadhHub",
+    "url": "https://ustadh-hub.vercel.app/",
+    "description": "UstadhHub connects Pakistani students with trusted online and home tutors across subjects.",
+    "areaServed": "Pakistan",
+    "email": "hello@ustadhhub.com"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "UstadhHub",
+    "url": "https://ustadh-hub.vercel.app/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://ustadh-hub.vercel.app/?subject={query}",
+      "query-input": "required name=query"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I find a tutor on UstadhHub?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Type your subject in the search box or browse the subject grid, then filter tutors by Online or Home tuition. Open any profile to compare experience, fees, ratings and teaching style, then request a demo lesson."}
+      },
+      {
+        "@type": "Question",
+        "name": "What are the fees for tutors in Pakistan?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Fees depend on the subject, tutor experience and mode. On UstadhHub, starting rates range from about Rs 1,200 to Rs 2,500 per hour. Use our free Fee Calculator to estimate your monthly cost."}
+      },
+      {
+        "@type": "Question",
+        "name": "Is online tuition better than home tuition?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Both work well. Online tuition is flexible and usually cheaper; home tuition gives in-person attention. Read our guide 'Online vs Home Tuition' on the UstadhHub blog to decide."}
+      },
+      {
+        "@type": "Question",
+        "name": "How can I contact UstadhHub?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Email hello@ustadhhub.com or call/WhatsApp +92 300 000 0000. We reply within one working day."}
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div class="wrap utility" aria-label="Primary navigation">
-    <a class="brand" href="#top">Ustadh<span>Hub</span></a>
-    <a href="#subjects">Subjects</a><a href="#tutors">Find a tutor</a><a href="#how">How it works</a><a href="#contact">Contact</a>
-    <button class="teach-link" data-open-tutor>Become a tutor</button><button class="join" data-open-draft>Post a requirement</button>
-  </div>
+  <header class="site-header">
+    <div class="wrap utility" aria-label="Primary navigation">
+      <a class="brand" href="#top">Ustadh<span>Hub</span></a>
+      <nav class="links" aria-label="Sections">
+        <a href="#subjects">Subjects</a><a href="#tutors">Find a tutor</a><a href="#tools">AI tools</a><a href="#blog">Blog</a><a href="#contact">Contact</a>
+      </nav>
+      <button class="teach-link" data-open-tutor>Become a tutor</button><button class="join" data-open-draft>Post a requirement</button>
+    </div>
+  </header>
 
-  <header class="hero" id="top">
+  <section class="hero" id="top" aria-label="Introduction">
     <div class="hero-inner">
       <div class="hero-copy">
         <span class="tag">1-to-1 · Online · Home tuition</span>
-        <h1>Find trusted tutors for every subject.</h1>
+        <h1>Find <em>trusted tutors</em> for every subject.</h1>
         <p>Tell us what you want to learn. Compare trusted tutor profiles side by side. Then start learning — on your terms, at your pace.</p>
         <form class="searchbox" id="heroSearch">
           <div class="field"><label for="subjectInput">Subject</label><input id="subjectInput" placeholder="e.g. Mathematics" autocomplete="off" /></div>
@@ -29,28 +97,30 @@
         <div class="proof"><span>Clear tutor profiles</span><span>Direct fee discussion</span><span>Choice in your hands</span></div>
       </div>
     </div>
-  </header>
+  </section>
 
   <main>
-    <section id="subjects" class="wrap">
-      <div class="section-head"><h2>What will you learn today?</h2><p>From school subjects to languages and digital skills — find your next teacher in one place.</p></div>
-      <div class="subject-grid">
-        <button class="subject" data-subject="mathematics"><svg viewBox="0 0 24 24"><path d="M4 5h16M7 3v4M17 3v4M5 12h5v7H5zM14 11l5 8m0-8-5 8"/></svg><span><strong>Mathematics</strong><small> · 240 tutors</small></span></button>
-        <button class="subject" data-subject="physics"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="4" ry="10" transform="rotate(45 12 12)"/></svg><span><strong>Physics</strong><small> · 118 tutors</small></span></button>
-        <button class="subject" data-subject="english"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H8l-4 3zM8 9h8M8 13h5"/></svg><span><strong>English</strong><small> · 195 tutors</small></span></button>
-        <button class="subject" data-subject="quran"><svg viewBox="0 0 24 24"><path d="M3 5c4-1 7 0 9 2 2-2 5-3 9-2v14c-4-1-7 0-9 2-2-2-5-3-9-2zM12 7v14"/></svg><span><strong>Quran &amp; Tajweed</strong><small> · 156 tutors</small></span></button>
-        <button class="subject" data-subject="coding"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><span><strong>Coding</strong><small> · 89 tutors</small></span></button>
-        <button class="subject" data-subject="design"><svg viewBox="0 0 24 24"><path d="M5 19c3-1 4-4 3-7l8-8 4 4-8 8c-3-1-6 0-7 3zM14 6l4 4"/></svg><span><strong>Creative skills</strong><small> · 74 tutors</small></span></button>
+    <section id="subjects">
+      <div class="wrap">
+        <div class="section-head"><div><span class="kicker">Subjects</span><h2>What will you learn today?</h2></div><p>From school subjects to languages and digital skills — find your next teacher in one place.</p></div>
+        <div class="subject-grid">
+          <button class="subject" data-subject="mathematics"><svg viewBox="0 0 24 24"><path d="M4 5h16M7 3v4M17 3v4M5 12h5v7H5zM14 11l5 8m0-8-5 8"/></svg><span><strong>Mathematics</strong><small> · 240 tutors</small></span></button>
+          <button class="subject" data-subject="physics"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="4" ry="10" transform="rotate(45 12 12)"/></svg><span><strong>Physics</strong><small> · 118 tutors</small></span></button>
+          <button class="subject" data-subject="english"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H8l-4 3zM8 9h8M8 13h5"/></svg><span><strong>English</strong><small> · 195 tutors</small></span></button>
+          <button class="subject" data-subject="quran"><svg viewBox="0 0 24 24"><path d="M3 5c4-1 7 0 9 2 2-2 5-3 9-2v14c-4-1-7 0-9 2-2-2-5-3-9-2zM12 7v14"/></svg><span><strong>Quran &amp; Tajweed</strong><small> · 156 tutors</small></span></button>
+          <button class="subject" data-subject="coding"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><span><strong>Coding</strong><small> · 89 tutors</small></span></button>
+          <button class="subject" data-subject="design"><svg viewBox="0 0 24 24"><path d="M5 19c3-1 4-4 3-7l8-8 4 4-8 8c-3-1-6 0-7 3zM14 6l4 4"/></svg><span><strong>Creative skills</strong><small> · 74 tutors</small></span></button>
+        </div>
       </div>
     </section>
 
     <section class="tutors" id="tutors">
       <div class="wrap">
-        <div class="section-head"><div><h2>Tutor shortlist</h2><p id="resultLabel">Profiles selected for strong teaching signals and learner fit.</p></div><p>Compare approach, experience and fee before you decide.</p></div>
+        <div class="section-head"><div><span class="kicker">Tutors</span><h2>Tutor shortlist</h2></div><p id="resultLabel">Profiles selected for strong teaching signals and learner fit.</p></div>
         <div class="controls" aria-label="Tutor filters"><button class="pill active" data-filter="all">All tutors</button><button class="pill" data-filter="online">Online</button><button class="pill" data-filter="home">Home tuition</button></div>
         <div class="tutor-grid" id="tutorGrid">
           <article class="tutor-card" data-subject="mathematics" data-mode="online home" data-tutor="ayesha">
-            <div class="portrait"><svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Portrait of tutor Ayesha Khan"><defs><linearGradient id="g-ayesha" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs><rect width="100" height="100" fill="url(#g-ayesha)"/><text x="50" y="63" text-anchor="middle" font-size="32" fill="#ffffff" font-weight="700" font-family="system-ui,sans-serif">AK</text></svg><span class="score">96% match</span></div>
+            <div class="portrait"><svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Portrait of tutor Ayesha Khan"><defs><linearGradient id="g-ayesha" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E2242"/><stop offset="1" stop-color="#D4AF37"/></linearGradient></defs><rect width="100" height="100" fill="url(#g-ayesha)"/><text x="50" y="63" text-anchor="middle" font-size="32" fill="#ffffff" font-weight="700" font-family="Poppins,sans-serif">AK</text></svg><span class="score">96% match</span></div>
             <div class="card-body">
               <div class="name-row"><h3>Ayesha Khan</h3><span class="rating"><b>★ 4.9</b> (84)</span></div>
               <div class="role">Mathematics · O/A Levels</div>
@@ -60,7 +130,17 @@
             </div>
           </article>
           <article class="tutor-card" data-subject="physics" data-mode="online" data-tutor="hamza">
-            <div class="portrait"><svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Portrait of tutor Hamza Qureshi"><defs><linearGradient id="g-hamza" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs><rect width="100" height="100" fill="url(#g-hamza)"/><text x="50" y="63" text-anchor="middle" font-size="32" fill="#ffffff" font-weight="700" font-family="system-ui,sans-serif">HQ</text></svg><span class="score">92% match</span></div>
+            <div class="portrait"><svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Portrait of tutor Hamza Qureshi"><defs><linearGradient id="g-hamza" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A1A33"/><stop offset="1" stop-color="#C9A227"/></linearGradient></defs><rect width="100" height="100" fill="url(#g-hamza)"/><text x="50" y="63" text-anchor="middle" font-size="32" fill="#ffffff" font-weight="700" font-family="Poppins,sans-serif">HQ</text></svg><span class="score">92% match</span></div>
+            <div class="card-body">
+              <div class="name-row"><h3>Ayesha Khan</h3><span class="rating"><b>★ 4.9</b> (84)</span></div>
+              <div class="role">Mathematics · O/A Levels</div>
+              <p class="bio">Concept-first lessons with weekly progress notes and past-paper practice.</p>
+              <div class="chips"><span class="chip">6 years</span><span class="chip">Online + Home</span><span class="chip">English / Urdu</span></div>
+              <div class="card-foot"><div class="price"><strong>Rs 1,800</strong><small>starting / hour</small></div><button class="view" data-profile="ayesha">View profile →</button></div>
+            </div>
+          </article>
+          <article class="tutor-card" data-subject="physics" data-mode="online" data-tutor="hamza">
+            <div class="portrait"><svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Portrait of tutor Hamza Qureshi"><defs><linearGradient id="g-hamza" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A1A33"/><stop offset="1" stop-color="#C9A227"/></linearGradient></defs><rect width="100" height="100" fill="url(#g-hamza)"/><text x="50" y="63" text-anchor="middle" font-size="32" fill="#ffffff" font-weight="700" font-family="Poppins,sans-serif">HQ</text></svg><span class="score">92% match</span></div>
             <div class="card-body">
               <div class="name-row"><h3>Hamza Qureshi</h3><span class="rating"><b>★ 4.8</b> (61)</span></div>
               <div class="role">Physics · FSc / A Levels</div>
@@ -70,7 +150,7 @@
             </div>
           </article>
           <article class="tutor-card" data-subject="english" data-mode="online home" data-tutor="sana">
-            <div class="portrait"><svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Portrait of tutor Sana Malik"><defs><linearGradient id="g-sana" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ec4899"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs><rect width="100" height="100" fill="url(#g-sana)"/><text x="50" y="63" text-anchor="middle" font-size="32" fill="#ffffff" font-weight="700" font-family="system-ui,sans-serif">SM</text></svg><span class="score">89% match</span></div>
+            <div class="portrait"><svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Portrait of tutor Sana Malik"><defs><linearGradient id="g-sana" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14294d"/><stop offset="1" stop-color="#E9CF7A"/></linearGradient></defs><rect width="100" height="100" fill="url(#g-sana)"/><text x="50" y="63" text-anchor="middle" font-size="32" fill="#ffffff" font-weight="700" font-family="Poppins,sans-serif">SM</text></svg><span class="score">89% match</span></div>
             <div class="card-body">
               <div class="name-row"><h3>Sana Malik</h3><span class="rating"><b>★ 4.9</b> (47)</span></div>
               <div class="role">English · Spoken &amp; IELTS</div>
@@ -85,7 +165,7 @@
     </section>
 
     <section id="how" class="wrap match">
-      <div class="match-copy"><h2>Not just a profile — find your teaching fit.</h2><p>The Ustadh Compass turns your priorities into one simple match score, so shortlisting feels easy.</p>
+      <div class="match-copy"><span class="kicker">How it works</span><h2>Not just a profile — find your teaching fit.</h2><p>The Ustadh Compass turns your priorities into one simple match score, so shortlisting feels easy.</p>
         <div class="steps">
           <div class="step"><span class="step-num">1</span><div><h3>Share your goal</h3><p>Pick your subject, class level, mode and preferred fee range.</p></div></div>
           <div class="step"><span class="step-num">2</span><div><h3>Compare teaching styles</h3><p>Structured practice, patient explanations or fast exam prep — pick your fit.</p></div></div>
@@ -101,20 +181,105 @@
       </div>
     </section>
 
+    <section id="tools" class="tools">
+      <div class="wrap">
+        <div class="section-head"><div><span class="kicker">Free AI tools</span><h2>Plan smarter, spend smarter.</h2></div><p>Two free tools that run right in your browser — no sign-up, no download.</p></div>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <h3>Tuition Fee Calculator</h3>
+            <p>Estimate your monthly tuition cost in seconds.</p>
+            <label for="feeSubject">Subject</label>
+            <select id="feeSubject">
+              <option value="1800">Mathematics — Rs 1,800/hr</option>
+              <option value="2200">Physics — Rs 2,200/hr</option>
+              <option value="1500">English — Rs 1,500/hr</option>
+              <option value="1200">Quran &amp; Tajweed — Rs 1,200/hr</option>
+              <option value="2500">Coding — Rs 2,500/hr</option>
+              <option value="2000">Creative skills — Rs 2,000/hr</option>
+            </select>
+            <label for="feeMode">Mode</label>
+            <select id="feeMode"><option value="1">Online</option><option value="1.25">Home tuition (+25%)</option></select>
+            <label for="feeHours">Hours per week: <output id="feeHoursOut">4</output></label>
+            <input id="feeHours" type="range" min="1" max="12" value="4" />
+            <button class="tool-btn" id="feeBtn">Calculate fee</button>
+            <div class="tool-result" id="feeResult" aria-live="polite"></div>
+          </div>
+          <div class="tool-card">
+            <h3>Weekly Study Planner</h3>
+            <p>Get a balanced 7-day study plan in one click.</p>
+            <label>Subjects (pick up to 4)</label>
+            <div class="checks" id="planSubjects">
+              <label><input type="checkbox" value="Mathematics" checked /> Mathematics</label>
+              <label><input type="checkbox" value="Physics" checked /> Physics</label>
+              <label><input type="checkbox" value="English" /> English</label>
+              <label><input type="checkbox" value="Quran &amp; Tajweed" /> Quran</label>
+              <label><input type="checkbox" value="Coding" /> Coding</label>
+            </div>
+            <label for="planGoal">Main goal</label>
+            <select id="planGoal">
+              <option value="exam">Board exam preparation</option>
+              <option value="concepts">Concept building</option>
+              <option value="revision">Quick revision</option>
+            </select>
+            <label for="planHours">Study hours per day: <output id="planHoursOut">2</output></label>
+            <input id="planHours" type="range" min="1" max="5" value="2" />
+            <button class="tool-btn" id="planBtn">Build my plan</button>
+            <div class="tool-result" id="planResult" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog-teasers">
+      <div class="wrap">
+        <div class="section-head"><div><span class="kicker">Learning guides</span><h2>Latest from the blog</h2></div><p>Practical guides on online classes, choosing tutors and scoring higher.</p></div>
+        <div class="blog-grid">
+          <article class="post-card">
+            <div class="post-band">Online vs Home Tuition</div>
+            <div class="post-body">
+              <div class="post-meta">Oct 14, 2026 · 6 min read</div>
+              <h3><a href="posts/online-vs-home-tuition.html">Online vs Home Tuition: Which Is Better for Pakistani Students?</a></h3>
+              <p>Cost, attention, flexibility and results — an honest comparison to help your family decide.</p>
+              <a class="read-more" href="posts/online-vs-home-tuition.html">Read article →</a>
+            </div>
+          </article>
+          <article class="post-card">
+            <div class="post-band">Choosing a Tutor</div>
+            <div class="post-body">
+              <div class="post-meta">Oct 14, 2026 · 7 min read</div>
+              <h3><a href="posts/how-to-choose-online-tutor.html">How to Choose an Online Tutor: 7 Tips That Actually Work</a></h3>
+              <p>Demo lessons, trial questions and red flags — what to check before you pay anyone.</p>
+              <a class="read-more" href="posts/how-to-choose-online-tutor.html">Read article →</a>
+            </div>
+          </article>
+          <article class="post-card">
+            <div class="post-band">Study Success</div>
+            <div class="post-body">
+              <div class="post-meta">Oct 14, 2026 · 8 min read</div>
+              <h3><a href="posts/online-classes-success-tips.html">10 Tips to Get Maximum Marks from Online Classes</a></h3>
+              <p>Small habits that turn screen time into top grades — from camera-on rules to past-paper routines.</p>
+              <a class="read-more" href="posts/online-classes-success-tips.html">Read article →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="join" class="wrap">
-      <div class="section-head"><div><h2>Become a tutor on UstadhHub</h2><p>Turn your expertise into income. Set your own subjects, schedule and fee.</p></div><button class="join" data-open-tutor>Create tutor profile</button></div>
+      <div class="section-head"><div><span class="kicker">For tutors</span><h2>Become a tutor on UstadhHub</h2></div><p>Turn your expertise into income. Set your own subjects, schedule and fee.</p></div>
       <div class="join-grid">
         <div class="join-card"><div class="big">1.</div><h3>Build your profile</h3><p>List your subjects, experience, teaching mode and starting fee in a clean, professional profile.</p></div>
         <div class="join-card"><div class="big">2.</div><h3>Get discovered</h3><p>Students search by subject and city — your profile appears in front of learners who need exactly what you teach.</p></div>
         <div class="join-card"><div class="big">3.</div><h3>Teach your way</h3><p>Accept demo lessons, agree the schedule directly, and keep full control of how you teach.</p></div>
         <div class="join-card"><div class="big">4.</div><h3>Grow your reputation</h3><p>Great teaching earns reviews and ratings, which bring you more students over time.</p></div>
       </div>
+      <p style="margin-top:24px"><button class="join" data-open-tutor>Create tutor profile</button></p>
     </section>
 
     <div class="wrap cta"><div><h2>Students: post your learning requirement.</h2><p>Class, subject, schedule and budget in one clear brief — download it and share it anywhere.</p></div><button data-open-draft>Create a requirement draft</button></div>
 
     <section id="contact" class="wrap">
-      <div class="section-head"><div><h2>Talk to us</h2><p>Questions about a tutor, your profile, or a partnership? We reply within one working day.</p></div></div>
+      <div class="section-head"><div><span class="kicker">Contact</span><h2>Talk to us</h2></div><p>Questions about a tutor, your profile, or a partnership? We reply within one working day.</p></div>
       <div class="contact-grid">
         <div class="contact-cards">
           <div class="contact-card"><h3>Email</h3><p><a href="mailto:hello@ustadhhub.com">hello@ustadhhub.com</a></p></div>
@@ -132,14 +297,25 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="wrap footer-grid">
       <a class="brand" href="#top" style="margin:0">Ustadh<span>Hub</span></a>
-      <nav><a href="#subjects">Subjects</a><a href="#tutors">Tutors</a><a href="#join">Become a tutor</a><a href="#contact">Contact</a></nav>
+      <nav aria-label="Footer"><a href="#subjects">Subjects</a><a href="#tutors">Tutors</a><a href="#tools">AI tools</a><a href="blog.html">Blog</a><a href="#join">Become a tutor</a><a href="#contact">Contact</a></nav>
       <span>© 2026 UstadhHub. Find trusted tutors.</span>
     </div>
   </footer>
   <p class="demo-note">Concept demo: tutor names, reviews, availability and prices shown here are fictional.</p>
+
+  <!-- chatbot -->
+  <button class="chat-fab" id="chatFab" aria-label="Open chat assistant">
+    <svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg>
+  </button>
+  <div class="chat-panel" id="chatPanel" role="dialog" aria-label="UstadhHub assistant">
+    <div class="chat-head"><span class="dot"></span><div><strong>Ustadh Assistant</strong><small>Typically replies instantly</small></div><button id="chatClose" aria-label="Close chat">×</button></div>
+    <div class="chat-body" id="chatBody" aria-live="polite"></div>
+    <div class="chat-quick" id="chatQuick"></div>
+    <form class="chat-input" id="chatForm"><input id="chatText" placeholder="Type your question…" autocomplete="off" aria-label="Your message" /><button type="submit">Send</button></form>
+  </div>
 
   <div class="modal-backdrop" id="profileModal" role="dialog" aria-modal="true" aria-labelledby="profileTitle"><div class="modal">
     <div class="modal-head"><div><h2 id="profileTitle">Tutor profile</h2><p>A closer look before you decide.</p></div><button class="close" id="closeProfile" aria-label="Close">×</button></div>
