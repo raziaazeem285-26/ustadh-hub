@@ -13,6 +13,54 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://ustadh-hub.vercel.app/about.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ustadh-hub.vercel.app/privacy.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ustadh-hub.vercel.app/disclaimer.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ustadh-hub.vercel.app/categories/duas-fazilat.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ustadh-hub.vercel.app/categories/quran.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ustadh-hub.vercel.app/categories/hadith.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ustadh-hub.vercel.app/categories/seerah-stories.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ustadh-hub.vercel.app/categories/daily-life.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ustadh-hub.vercel.app/posts/when-dua-feels-unanswered.html</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>

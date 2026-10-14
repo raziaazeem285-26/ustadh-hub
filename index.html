@@ -71,10 +71,25 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap utility" aria-label="Primary navigation">
+    <div class="wrap nav-wrap">
       <a class="brand" href="#top">Razia<span>Azeem</span></a>
-      <nav class="links" aria-label="Sections">
-        <a href="#blog">Blog</a><a href="#connect">Connect</a><a href="#contact">Contact</a>
+      <button class="hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="links" id="siteNav" aria-label="Primary">
+        <button class="nav-close" id="navClose" aria-label="Close menu">×</button>
+        <a href="#top" data-nav="home">Home</a>
+        <a href="blog.html" data-nav="blog">Blog</a>
+        <div class="has-drop">
+          <button class="drop-btn" data-nav="categories" aria-haspopup="true" aria-expanded="false">Categories <span class="caret">▾</span></button>
+          <div class="dropdown">
+            <a href="categories/duas-fazilat.html">Duas &amp; Fazilat</a>
+            <a href="categories/quran.html">Quran</a>
+            <a href="categories/hadith.html">Hadith</a>
+            <a href="categories/seerah-stories.html">Seerah &amp; Stories</a>
+            <a href="categories/daily-life.html">Daily Life</a>
+          </div>
+        </div>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="#contact" data-nav="contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -92,29 +107,48 @@
         <div class="proof"><span>New blogs daily</span><span>Quran &amp; Hadith references</span><span>Stories &amp; Duas</span></div>
       </div>
     </div>
-    <svg class="hero-scene" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-      <g fill="#D4AF37" opacity=".5">
-        <circle cx="120" cy="40" r="2.5"/><circle cx="260" cy="82" r="1.8"/><circle cx="420" cy="30" r="2.2"/>
-        <circle cx="700" cy="55" r="1.8"/><circle cx="880" cy="32" r="2.5"/><circle cx="1050" cy="78" r="1.8"/>
-        <circle cx="960" cy="112" r="1.5"/><circle cx="180" cy="122" r="1.5"/><circle cx="540" cy="66" r="1.6"/>
+    <svg class="hero-scene" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <defs>
+        <radialGradient id="hhalo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#E9CF7A" stop-opacity=".45"/><stop offset="1" stop-color="#E9CF7A" stop-opacity="0"/></radialGradient>
+        <linearGradient id="hdoor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9CF7A"/><stop offset="1" stop-color="#C9A227"/></linearGradient>
+      </defs>
+      <g fill="#D4AF37">
+        <circle cx="90" cy="36" r="2.4" opacity=".8"/><circle cx="200" cy="70" r="1.7" opacity=".6"/><circle cx="330" cy="30" r="2.1" opacity=".75"/>
+        <circle cx="470" cy="60" r="1.6" opacity=".55"/><circle cx="600" cy="26" r="2" opacity=".7"/><circle cx="730" cy="64" r="1.7" opacity=".6"/>
+        <circle cx="850" cy="30" r="2.2" opacity=".75"/><circle cx="960" cy="96" r="1.6" opacity=".55"/><circle cx="1120" cy="120" r="1.8" opacity=".6"/>
+        <circle cx="140" cy="110" r="1.5" opacity=".5"/><circle cx="540" cy="96" r="1.5" opacity=".5"/><circle cx="790" cy="110" r="1.4" opacity=".45"/>
+        <circle cx="60" cy="150" r="1.4" opacity=".45"/><circle cx="1160" cy="60" r="1.6" opacity=".55"/>
       </g>
-      <g transform="translate(1085,44)"><path fill="#D4AF37" opacity=".9" fill-rule="evenodd" d="M-22,0 a22,22 0 1,0 44,0 a22,22 0 1,0 -44,0 M-9,-4 a17,17 0 1,0 34,0 a17,17 0 1,0 -34,0"/></g>
+      <circle cx="1058" cy="46" r="46" fill="url(#hhalo)"/>
+      <g transform="translate(1058,46)"><path fill="#D4AF37" fill-rule="evenodd" d="M-24,0 a24,24 0 1,0 48,0 a24,24 0 1,0 -48,0 M-10,-5 a18,18 0 1,0 36,0 a18,18 0 1,0 -36,0"/></g>
+      <path d="M0,196 Q220,164 440,190 T880,184 T1200,192 L1200,220 L0,220 Z" fill="#0E2242" opacity=".55"/>
       <g fill="#060F22">
-        <rect x="0" y="186" width="1200" height="14"/>
-        <rect x="470" y="140" width="260" height="46"/>
-        <path d="M470,140 C470,96 530,78 600,78 C670,78 730,96 730,140 Z"/>
-        <rect x="597" y="58" width="6" height="22"/>
-        <rect x="380" y="156" width="90" height="30"/><rect x="730" y="156" width="90" height="30"/>
-        <path d="M380,156 C380,128 408,120 425,120 C442,120 470,128 470,156 Z"/>
-        <path d="M730,156 C730,128 758,120 775,120 C792,120 820,128 820,156 Z"/>
-        <rect x="322" y="70" width="16" height="116"/><rect x="315" y="96" width="30" height="7"/><rect x="315" y="130" width="30" height="7"/>
-        <path d="M322,70 L330,44 L338,70 Z"/>
-        <rect x="862" y="70" width="16" height="116"/><rect x="855" y="96" width="30" height="7"/><rect x="855" y="130" width="30" height="7"/>
-        <path d="M862,70 L870,44 L878,70 Z"/>
+        <rect x="268" y="72" width="20" height="138"/>
+        <rect x="259" y="106" width="38" height="8" rx="2"/><rect x="259" y="152" width="38" height="8" rx="2"/>
+        <path d="M268,72 L278,42 L288,72 Z"/>
+        <rect x="912" y="72" width="20" height="138"/>
+        <rect x="903" y="106" width="38" height="8" rx="2"/><rect x="903" y="152" width="38" height="8" rx="2"/>
+        <path d="M912,72 L922,42 L932,72 Z"/>
+        <rect x="348" y="168" width="92" height="42"/>
+        <path d="M348,168 C348,138 378,130 394,130 C410,130 440,138 440,168 Z"/>
+        <rect x="760" y="168" width="92" height="42"/>
+        <path d="M760,168 C760,138 790,130 806,130 C822,130 852,138 852,168 Z"/>
+        <rect x="440" y="150" width="320" height="60"/>
+        <path d="M440,150 C440,96 522,74 600,74 C678,74 760,96 760,150 Z"/>
+        <rect x="597" y="48" width="6" height="28"/>
       </g>
-      <circle cx="330" cy="40" r="3.5" fill="#D4AF37"/><circle cx="870" cy="40" r="3.5" fill="#D4AF37"/>
-      <circle cx="600" cy="50" r="6" fill="#D4AF37"/>
-      <path d="M585,186 L585,160 Q600,146 615,160 L615,186 Z" fill="#D4AF37" opacity=".3"/>
+      <g transform="translate(600,40) scale(.42)"><path fill="#D4AF37" fill-rule="evenodd" d="M-24,0 a24,24 0 1,0 48,0 a24,24 0 1,0 -48,0 M-10,-5 a18,18 0 1,0 36,0 a18,18 0 1,0 -36,0"/></g>
+      <g transform="translate(278,34) scale(.22)"><path fill="#D4AF37" fill-rule="evenodd" d="M-24,0 a24,24 0 1,0 48,0 a24,24 0 1,0 -48,0 M-10,-5 a18,18 0 1,0 36,0 a18,18 0 1,0 -36,0"/></g>
+      <g transform="translate(922,34) scale(.22)"><path fill="#D4AF37" fill-rule="evenodd" d="M-24,0 a24,24 0 1,0 48,0 a24,24 0 1,0 -48,0 M-10,-5 a18,18 0 1,0 36,0 a18,18 0 1,0 -36,0"/></g>
+      <g fill="#D4AF37" opacity=".8">
+        <path d="M486,210 L486,184 Q496,172 506,184 L506,210 Z"/>
+        <path d="M547,210 L547,184 Q557,172 567,184 L567,210 Z"/>
+        <path d="M633,210 L633,184 Q643,172 653,184 L653,210 Z"/>
+        <path d="M694,210 L694,184 Q704,172 714,184 L714,210 Z"/>
+      </g>
+      <ellipse cx="600" cy="192" rx="34" ry="26" fill="url(#hhalo)"/>
+      <path d="M582,210 L582,178 Q600,160 618,178 L618,210 Z" fill="url(#hdoor)"/>
+      <rect x="0" y="208" width="1200" height="12" fill="#040B1A"/>
     </svg>
   </section>
 
@@ -125,24 +159,59 @@
       <div class="blog-grid">
         <!-- LATEST-POSTS-START -->
           <article class="post-card reveal">
-            <div class="post-band">Duas &amp; Fazilat</div>
+            <a class="post-band" href="categories/duas-fazilat.html"><span>Duas &amp; Fazilat</span></a>
             <div class="post-body">
               <div class="post-meta">14 Oct, 2026 · 6 min read</div>
               <h3><a href="posts/istighfar-rizq-relief-door.html">Istighfar: The Forgotten Door to Rizq and Relief</a></h3>
               <p>How Astaghfirullah opens doors of rizq, relief and mercy — with Quran, hadith and simple daily practices.</p>
-              <a class="read-more" href="posts/istighfar-rizq-relief-door.html">Read article →</a>
+              <a class="read-more" href="posts/istighfar-rizq-relief-door.html">Read article</a>
             </div>
           </article>
           <article class="post-card reveal">
-            <div class="post-band">Dua &amp; Sabr</div>
+            <a class="post-band" href="categories/duas-fazilat.html"><span>Duas &amp; Fazilat</span></a>
             <div class="post-body">
               <div class="post-meta">14 Oct, 2026 · 6 min read</div>
               <h3><a href="posts/when-dua-feels-unanswered.html">When Your Dua Feels Unanswered: Finding Hope in Sabr and Tawakkul</a></h3>
               <p>What the Quran and Hadith say about delayed duas — and why Allah's timing is always perfect.</p>
-              <a class="read-more" href="posts/when-dua-feels-unanswered.html">Read article →</a>
+              <a class="read-more" href="posts/when-dua-feels-unanswered.html">Read article</a>
             </div>
           </article>
         <!-- LATEST-POSTS-END -->
+      </div>
+    </div>
+  </section>
+
+  <div class="orn-divider" aria-hidden="true"><i></i><span>✦</span><i></i></div>
+
+  <section class="browse-cats" aria-label="Browse by category">
+    <div class="wrap">
+      <div class="section-head reveal"><div><span class="kicker">Find your topic</span><h2>Browse by category</h2></div><p>Every article is organised by theme — pick a category and start reading.</p></div>
+      <div class="cat-tiles">
+        <a class="cat-tile reveal" href="categories/duas-fazilat.html">
+          <span class="tile-art"><svg viewBox="0 0 24 24"><path d="M15.5 3.5a5.5 5.5 0 1 0 3.2 10"/><circle cx="7" cy="9" r="1.4"/><circle cx="9.5" cy="13.5" r="1.4"/><circle cx="13.5" cy="16.5" r="1.4"/><circle cx="18" cy="17.5" r="1.4"/><path d="M19.5 18.5l1 2.5"/></svg></span>
+          <h3>Duas &amp; Fazilat</h3>
+          <p>Powerful duas, their virtues and the etiquette of asking Allah.</p>
+        </a>
+        <a class="cat-tile reveal" href="categories/quran.html">
+          <span class="tile-art"><svg viewBox="0 0 24 24"><path d="M12 5.5C10 4.5 7 4.5 4 5.5v13c3-1 6-1 8 0 2-1 5-1 8 0v-13c-3-1-6-1-8 0z"/><path d="M12 5.5v13"/></svg></span>
+          <h3>Quran</h3>
+          <p>Reflections on the verses of the Holy Quran with context and lessons.</p>
+        </a>
+        <a class="cat-tile reveal" href="categories/hadith.html">
+          <span class="tile-art"><svg viewBox="0 0 24 24"><rect x="6" y="3.5" width="12" height="17" rx="2"/><path d="M9 8h6M9 11.5h6M9 15h4"/></svg></span>
+          <h3>Hadith</h3>
+          <p>Sayings and wisdom of the Prophet ﷺ, with authentic sources.</p>
+        </a>
+        <a class="cat-tile reveal" href="categories/seerah-stories.html">
+          <span class="tile-art"><svg viewBox="0 0 24 24"><path d="M12 21V10"/><path d="M12 10c-3 0-5-2-5.5-4.5C9 6 10.5 7.5 12 10z"/><path d="M12 10c3 0 5-2 5.5-4.5C15 6 13.5 7.5 12 10z"/><path d="M4 21h16"/></svg></span>
+          <h3>Seerah &amp; Stories</h3>
+          <p>Stories from the Seerah and Islamic history that inspire.</p>
+        </a>
+        <a class="cat-tile reveal" href="categories/daily-life.html">
+          <span class="tile-art"><svg viewBox="0 0 24 24"><path d="M12 9a5 5 0 0 0-5 5h10a5 5 0 0 0-5-5z"/><path d="M12 4v2M5.6 6.6l1.4 1.4M18.4 6.6L17 8M3 18h18"/></svg></span>
+          <h3>Daily Life</h3>
+          <p>Practical Islamic guidance for everyday Muslim life.</p>
+        </a>
       </div>
     </div>
   </section>
@@ -176,7 +245,7 @@
 
     <section id="contact" class="wrap">
       <div class="section-head reveal"><div><span class="kicker">Contact</span><h2>Get in touch</h2></div><p>Questions about the blog, a topic you'd like covered, or online classes? Reach out — we reply within one working day.</p></div>
-      <div class="mihrab-scene" role="img" aria-label="Islamic mihrab arch with Quran and tasbih illustration">
+      <div class="mihrab-scene reveal" role="img" aria-label="Islamic mihrab arch with Quran and tasbih illustration">
         <svg viewBox="0 0 900 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
           <defs>
             <linearGradient id="msky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A1A33"/><stop offset="1" stop-color="#060F22"/></linearGradient>
@@ -218,11 +287,34 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <a class="brand" href="#top" style="margin:0">Razia<span>Azeem</span></a>
-      <nav aria-label="Footer"><a href="#blog">Blog</a><a href="#connect">Connect</a><a href="#contact">Contact</a></nav>
-      <span>© 2026 Razia Azeem Official.</span>
+    <div class="wrap footer-cols">
+      <div class="f-brand">
+        <a class="brand" href="#top">Razia<span>Azeem</span></a>
+        <p>Authentic Islamic knowledge, fresh every day — every article grounded in the Quran and Hadith with clear references.</p>
+        <div class="f-social">
+          <a href="https://www.youtube.com/@Raziaazeemofficial" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.4-1C16.6 3.6 12 3.6 12 3.6s-4.6 0-7.7.3c-.5.1-1.5.1-2.4 1-.7.7-.9 2.3-.9 2.3S.8 9.1.8 11v1.8c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.6 1 1.9.2 7.5.3 7.5.3s4.6 0 7.7-.4c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8V11c0-1.9-.2-3.8-.2-3.8zM9.7 15V8.4l6.2 3.3-6.2 3.3z"/></svg></a>
+          <a href="https://instagram.com/raziaazeem285" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-3.3-.1-4.8-1.7-4.9-4.9-.1-1.3-.1-1.6-.1-4.8s0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.5a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></a>
+        </div>
+      </div>
+      <nav class="f-col" aria-label="Explore"><h4>Explore</h4>
+        <a href="#top">Home</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="#contact">Contact</a>
+      </nav>
+      <nav class="f-col" aria-label="Categories"><h4>Categories</h4>
+        <a href="categories/duas-fazilat.html">Duas &amp; Fazilat</a>
+        <a href="categories/quran.html">Quran</a>
+        <a href="categories/hadith.html">Hadith</a>
+        <a href="categories/seerah-stories.html">Seerah &amp; Stories</a>
+        <a href="categories/daily-life.html">Daily Life</a>
+      </nav>
+      <nav class="f-col" aria-label="Legal"><h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
     </div>
+    <div class="footer-bottom"><div class="wrap">
+      <span>© 2026 Razia Azeem Official. All rights reserved.</span>
+      <span class="f-note">Authentic knowledge, shared with sincerity.</span>
+    </div></div>
   </footer>
 
   <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
