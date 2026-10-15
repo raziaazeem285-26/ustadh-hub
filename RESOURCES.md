@@ -33,7 +33,7 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Saved: 15 Oct 2026
 
 - **AionUi** (iOfficeAI, 27k+ stars, Apache-2.0)
-  https://github.com/iOfficeAI/AionUi/releases
+  https://github.com/iOfficeAI/AionUi
   Laptop par AI workspace (Jarvis-style, visual interface) — Claude Code, Codex, Gemini, OpenClaw sab ek screen me. Built-in agent Google login se chalta hai, schedule tasks (raat ko auto kaam), mobile se access.
   Download: https://github.com/iOfficeAI/AionUi/releases (Windows/macOS/Linux)
   Saved: 15 Oct 2026
