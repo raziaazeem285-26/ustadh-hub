@@ -106,6 +106,40 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
+  /* ---------- chatbot widget loader (loads chatbot.js + chatbot.css) ----------
+     Every page loads app.js, so the assistant appears on all pages automatically —
+     including future auto-blog posts. Paths resolve relative to app.js itself,
+     so posts/ and categories/ pages work without edits. */
+  (function () {
+    try {
+      var src = (document.currentScript && document.currentScript.src) || "";
+      var base = src.slice(0, src.lastIndexOf("/") + 1);
+      var l = document.createElement("link");
+      l.rel = "stylesheet"; l.href = base + "chatbot.css";
+      document.head.appendChild(l);
+      var s = document.createElement("script");
+      s.src = base + "chatbot.js"; s.async = false;
+      document.head.appendChild(s);
+    } catch (e) { /* chatbot is optional — never break the page */ }
+  })();
+
+  /* ---------- admission lead form (index.html #leadForm → WhatsApp) ---------- */
+  var leadForm = $("leadForm");
+  if (leadForm) leadForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name = $("leadName").value.trim(),
+        phone = $("leadPhone").value.trim(),
+        interest = $("leadInterest").value,
+        msg = $("leadMsg").value.trim();
+    var text = "Assalam-o-Alaikum! Website admission inquiry:\n" +
+      "Name: " + name + "\nWhatsApp: " + phone +
+      "\nInterested in: " + interest +
+      (msg ? "\nMessage: " + msg : "");
+    window.open("https://wa.me/923440325566?text=" + encodeURIComponent(text), "_blank");
+    $("leadStatus").textContent = "WhatsApp khul raha hai — bas Send dabayein. Shukriya!";
+    leadForm.reset();
+  });
+
   /* ---------- scroll reveal (light CSS animation, no libraries) ---------- */
   var els = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && els.length) {

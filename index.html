@@ -304,6 +304,27 @@
         </form>
       </div>
     </section>
+
+    <div class="orn-divider" aria-hidden="true"><i></i><span>✦</span><i></i></div>
+
+    <section id="admission" class="wrap">
+      <div class="section-head reveal"><div><span class="kicker">Online classes</span><h2>Admission inquiry</h2></div><p>Online Islamic classes me dakhle ke liye form bharein — aap ki request seedha WhatsApp par jayegi, 1 working day me jawab milega.</p></div>
+      <form class="contact-form reveal" id="leadForm" style="max-width:640px">
+        <label>Your name<input id="leadName" placeholder="Full name" required /></label>
+        <label>WhatsApp number<input id="leadPhone" inputmode="tel" placeholder="0344 1234567" required /></label>
+        <label>Interested in
+          <select id="leadInterest">
+            <option>Online classes</option>
+            <option>Blog topic request</option>
+            <option>Question</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Message (optional)<textarea id="leadMsg" rows="3" placeholder="Anything you'd like us to know"></textarea></label>
+        <button type="submit">Send via WhatsApp</button>
+        <div class="form-status" id="leadStatus" aria-live="polite"></div>
+      </form>
+    </section>
   </main>
 
   <footer class="site-footer">
