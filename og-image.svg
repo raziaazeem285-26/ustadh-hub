@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Razia Azeem Official — Islamic Knowledge, Quran and Hadith">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1A33"/>
+      <stop offset="1" stop-color="#10294F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#D4AF37" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(600,215)" fill="#D4AF37">
+    <path d="M38.5-52.6A62 62 0 1 0 38.5 52.6 48 48 0 1 1 38.5-52.6Z"/>
+    <path d="M78 6l7.6 15.4 17 2.5-12.3 12 2.9 16.9L78 44.6l-15.2 8 2.9-16.9-12.3-12 17-2.5Z"/>
+  </g>
+  <text x="600" y="360" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="bold" fill="#F5EFE0" letter-spacing="2">Razia Azeem Official</text>
+  <text x="600" y="415" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#D4AF37" letter-spacing="6">ISLAMIC KNOWLEDGE · QURAN &amp; HADITH</text>
+  <rect x="480" y="450" width="240" height="3" fill="#D4AF37" opacity="0.7"/>
+  <text x="600" y="495" text-anchor="middle" font-family="Verdana, sans-serif" font-size="24" fill="#B9C4D6">Fresh daily articles with authentic references</text>
+</svg>
