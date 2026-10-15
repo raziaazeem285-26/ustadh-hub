@@ -96,7 +96,7 @@
       chipsBox.appendChild(b);
     });
   }
-  var DEFAULT_CHIPS = ["📚 Online classes", "💰 Fees / Timing", "📝 Blog dekhein", "📋 Lead form"];
+  var DEFAULT_CHIPS = ["📚 Online classes", "🎁 Free trial", "💰 Fees / Timing", "📋 Lead form"];
 
   /* ---------- knowledge base (verified facts only) ---------- */
   function waHello(topic) {
@@ -106,12 +106,16 @@
     { k: ["salam", "assalam", "aoa", "adab", "hello", "hi", "hey", "salaam"],
       r: "Walaikum Assalam! 🤲 Main Razia Azeem Official ka assistant hoon. Online classes, blog ya kisi sawal me madad chahiye?" },
     { k: ["fee", "fees", "price", "qeemat", "pese", "paisy", "paisa", "kitne", "charges", "cost", "rate"],
-      r: "Fees ki latest maloomat WhatsApp par confirm hoti hai — wahan foran jawab mil jayega: [WhatsApp par poochein](" + waHello("Online classes ki fees maloom karni hai.") + ") 🤲" },
+      r: "Fees ki final maloomat WhatsApp par confirm hoti hai: [WhatsApp par poochein](" + waHello("Online classes ki fees maloom karni hai.") + "). Lekin khushkhabri 🎁 — pehli **trial class BILKUL FREE** hai! Neeche button dabayein, apni detail dein, hum aap ki free trial class schedule karenge.",
+      chips: ["🎁 Free trial class chahiye", "💬 WhatsApp par poochein"] },
     { k: ["time", "timing", "schedule", "waqt", "kab", "duration", "kitne baje"],
-      r: "Class timing aap ke country ke hisab se set hoti hai. Latest schedule ke liye WhatsApp par rabta karein: [WhatsApp par poochein](" + waHello("Class timing maloom karni hai.") + ") 🕐" },
+      r: "Class timing aap ke country ke hisab se set hoti hai — final schedule WhatsApp par milta hai: [WhatsApp par poochein](" + waHello("Class timing maloom karni hai.") + ") 🕐 Yaad rahe, pehli **trial class FREE** hai 🎁 — detail dein, hum schedule karke batayenge.",
+      chips: ["🎁 Free trial class chahiye", "💬 WhatsApp par poochein"] },
+    { k: ["trial", "free"],
+      r: "__TRIAL__" },
     { k: ["class", "classes", "course", "admission", "dakhla", "join", "parhna", "seekhna", "student", "talib"],
-      r: "Online classes me dakhle ke liye WhatsApp par rabta karein: [" + WA_DISPLAY + "](" + WA_BASE + "). Ya neeche lead form bharein — hum khud rabta karenge 👇",
-      chips: ["📋 Lead form bharein"] },
+      r: "Online classes me dakhle ke liye WhatsApp par rabta karein: [" + WA_DISPLAY + "](" + WA_BASE + "). Khushkhabri 🎁 — pehli **trial class BILKUL FREE** hai!",
+      chips: ["🎁 Free trial class chahiye", "📋 Lead form bharein"] },
     { k: ["quran"],
       r: "Quran par hamare articles yahan parhein: [Quran category](" + SITE + "/categories/quran.html) 📖 — har article me surah:ayat references ke saath." },
     { k: ["hadith", "hadees"],
@@ -155,6 +159,11 @@
   function startLead() {
     state = "lead_name"; lead = {};
     botSay("Zaroor! Pehle apna **naam** batayein:");
+    setChips([]);
+  }
+  function startTrial() {
+    state = "lead_name"; lead = { interest: "Free trial class" };
+    botSay("Bohat khoob! 🎁 Free trial class ke liye pehle apna **naam** batayein:");
     setChips([]);
   }
   function leadSummary() {
@@ -206,6 +215,12 @@
       botSay("Koi baat nahi! Kuch aur poochna ho to batayein 🙂");
       setChips(DEFAULT_CHIPS); return;
     }
+    if (state === "idle" && low.indexOf("free trial") > -1) { startTrial(); return; }
+    if (text === "💬 WhatsApp par poochein") {
+      window.open(waHello("Assalam-o-Alaikum! Mujhe online classes ke baare me maloomat chahiye."), "_blank");
+      botSay("WhatsApp khul raha hai — wahan apna sawal likhein 💬");
+      setChips(DEFAULT_CHIPS); return;
+    }
 
     if (state === "lead_name") {
       if (text.length < 2) { botSay("Naam thora wazeh likhein please:"); return; }
@@ -218,7 +233,7 @@
       if (!ph) { botSay("Number samajh nahi aya — dobara likhein (misal: 0344 1234567):"); return; }
       lead.phone = ph; state = "lead_interest";
       botSay("Kis cheez me interested hain?");
-      setChips(["Online classes", "Blog topic request", "Sawal poochna hai", "Kuch aur"]);
+      setChips(["🎁 Free trial class", "Online classes", "Blog topic request", "Sawal poochna hai", "Kuch aur"]);
       return;
     }
     if (state === "lead_interest") {
@@ -236,6 +251,7 @@
     var rule = findAnswer(text);
     if (rule) {
       if (rule.r === "__LEAD__") { startLead(); return; }
+      if (rule.r === "__TRIAL__") { startTrial(); return; }
       botSay(rule.r);
       setChips(rule.chips || DEFAULT_CHIPS);
     } else {
