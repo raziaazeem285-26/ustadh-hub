@@ -156,3 +156,174 @@
     els.forEach(function (el) { el.classList.add("in"); });
   }
 })();
+
+/* ============ v2 — search, related posts, comments, newsletter ============ */
+(function () {
+  "use strict";
+
+  /* ---------- site config (Razia: 2-minute setup notes in chat) ---------- */
+  var CONFIG = {
+    // Giscus comments: set true AFTER enabling Discussions on the repo + installing the giscus app.
+    GISCUS_ENABLED: false,
+    GISCUS_REPO: "raziaazeem285-26/ustadh-hub",
+    GISCUS_REPO_ID: "R_kgDOVJT4SQ",
+    GISCUS_CATEGORY: "General",
+    GISCUS_CATEGORY_ID: "", // fill after Discussions is enabled (see chat)
+    // Newsletter (Buttondown, free): set your Buttondown username after creating a free account.
+    NEWSLETTER_USER: ""
+  };
+
+  function appBase() {
+    try {
+      var src = (document.currentScript && document.currentScript.src) || "";
+      return src.slice(0, src.lastIndexOf("/") + 1);
+    } catch (e) { return ""; }
+  }
+  var BASE = appBase();
+
+  function fetchPosts() {
+    return fetch(BASE + "posts.json", { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .catch(function () { return []; });
+  }
+
+  /* ---------- staggered reveal: cards rise one after another ---------- */
+  try {
+    document.querySelectorAll(".blog-grid, .cat-tiles, .social-grid").forEach(function (grid) {
+      var kids = grid.querySelectorAll(":scope > *");
+      kids.forEach(function (k, i) {
+        if (!k.style.getPropertyValue("--d")) k.style.setProperty("--d", ((i % 4) * 0.09) + "s");
+      });
+    });
+  } catch (e) { /* stagger is decorative */ }
+
+  /* ---------- blog search (blog.html) ---------- */
+  var searchInput = document.getElementById("blogSearch");
+  if (searchInput) {
+    var grid = document.querySelector(".blog-grid");
+    var meta = document.getElementById("searchMeta");
+    var clearBtn = document.getElementById("searchClear");
+    var cards = grid ? Array.prototype.slice.call(grid.querySelectorAll(".post-card")) : [];
+    var noRes = document.createElement("div");
+    noRes.className = "no-results";
+    noRes.innerHTML = '<span class="big">🔍</span><h3>Kuch nahi mila</h3><p>Alfaaz badal kar dobara koshish karen — masalan "dua", "quran", "sabr".</p>';
+    function runSearch() {
+      var q = searchInput.value.trim().toLowerCase();
+      var n = 0;
+      cards.forEach(function (c) {
+        var hit = !q || c.textContent.toLowerCase().indexOf(q) > -1;
+        c.style.display = hit ? "" : "none";
+        if (hit) n++;
+      });
+      if (clearBtn) clearBtn.classList.toggle("show", !!q);
+      if (n === 0 && q) { grid.appendChild(noRes); }
+      else if (noRes.parentNode) { noRes.parentNode.removeChild(noRes); }
+      if (meta) meta.innerHTML = q ? ("<strong>" + n + "</strong> nateeja — “" + searchInput.value.trim().replace(/</g, "&lt;") + "”") : "";
+    }
+    searchInput.addEventListener("input", runSearch);
+    if (clearBtn) clearBtn.addEventListener("click", function () {
+      searchInput.value = ""; runSearch(); searchInput.focus();
+    });
+  }
+
+  /* ---------- related posts + comments (auto on every article page) ---------- */
+  var article = document.querySelector("article.article");
+  if (article) {
+    var slug = (location.pathname.split("/").pop() || "").replace(/\.html$/, "");
+    fetchPosts().then(function (posts) {
+      var me = null, others = [];
+      posts.forEach(function (p) { (p.slug === slug ? (me = p) : others.push(p)); });
+      var rel = [];
+      if (me) {
+        others.forEach(function (p) { if (p.category_slug === me.category_slug) rel.push(p); });
+        others.forEach(function (p) { if (p.category_slug !== me.category_slug && rel.indexOf(p) < 0) rel.push(p); });
+      } else { rel = others.slice(); }
+      rel = rel.slice(0, 3);
+
+      var sec = document.createElement("section");
+      sec.className = "related-sec wrap reveal";
+      var html = "<h2>Related articles</h2><p>Mazeed parhen — isi mauzu par aur articles:</p><div class=\"related-grid\">";
+      rel.forEach(function (p, i) {
+        var href = p.url.indexOf("posts/") === 0 ? "../" + p.url : p.url;
+        var catHref = "../categories/" + p.category_slug + ".html";
+        html += "<article class=\"post-card\" style=\"--d:" + (i * 0.09) + "s\">" +
+          "<a class=\"post-band\" href=\"" + catHref + "\"><span>" + p.category + "</span></a>" +
+          "<div class=\"post-body\"><div class=\"post-meta\">" + p.date + " · " + p.read_time + "</div>" +
+          "<h3><a href=\"" + href + "\">" + p.title + "</a></h3><p>" + p.excerpt + "</p>" +
+          "<a class=\"read-more\" href=\"" + href + "\">Read article</a></div></article>";
+      });
+      html += "</div>";
+      sec.innerHTML = html;
+      article.parentNode.insertBefore(sec, article.nextSibling);
+
+      /* comments */
+      var csec = document.createElement("section");
+      csec.className = "comments-sec wrap reveal";
+      if (CONFIG.GISCUS_ENABLED && CONFIG.GISCUS_CATEGORY_ID) {
+        csec.innerHTML = "<h2>Comments</h2><p>Apni raay likhen — sawal ho ya tajweez, khush aamdeed!</p><div class=\"giscus-wrap\" id=\"giscusWrap\"></div>";
+        article.parentNode.insertBefore(csec, sec.nextSibling);
+        var g = document.createElement("script");
+        g.src = "https://giscus.app/client.js";
+        g.setAttribute("data-repo", CONFIG.GISCUS_REPO);
+        g.setAttribute("data-repo-id", CONFIG.GISCUS_REPO_ID);
+        g.setAttribute("data-category", CONFIG.GISCUS_CATEGORY);
+        g.setAttribute("data-category-id", CONFIG.GISCUS_CATEGORY_ID);
+        g.setAttribute("data-mapping", "pathname");
+        g.setAttribute("data-strict", "0");
+        g.setAttribute("data-reactions-enabled", "1");
+        g.setAttribute("data-emit-metadata", "0");
+        g.setAttribute("data-input-position", "top");
+        g.setAttribute("data-theme", "light");
+        g.setAttribute("data-lang", "en");
+        g.crossOrigin = "anonymous";
+        g.async = true;
+        document.getElementById("giscusWrap").appendChild(g);
+      } else {
+        csec.innerHTML = "<h2>Comments</h2><p>Apni raay likhen — sawal ho ya tajweez, khush aamdeed!</p>" +
+          "<div class=\"giscus-wrap\"><div class=\"giscus-soon\"><span class=\"big\">💬</span>" +
+          "<p><strong>Comments jald aa rahe hain!</strong><br>Tab tak apna sawal chatbot se poochhen ya WhatsApp par bhejen.</p></div></div>";
+        article.parentNode.insertBefore(csec, sec.nextSibling);
+      }
+
+      /* re-run reveal observer for injected nodes */
+      try {
+        var io2 = new IntersectionObserver(function (es) {
+          es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io2.unobserve(en.target); } });
+        }, { threshold: 0.12 });
+        sec.querySelectorAll(".reveal").forEach(function (el) { io2.observe(el); });
+        io2.observe(csec);
+      } catch (e) { sec.classList.add("in"); csec.classList.add("in"); }
+    });
+  }
+
+  /* ---------- newsletter (Buttondown, free) ---------- */
+  var newsForm = document.getElementById("newsForm");
+  if (newsForm) {
+    newsForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var email = document.getElementById("newsEmail").value.trim();
+      var status = document.getElementById("newsStatus");
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        status.textContent = "Sahih email likhen, phir subscribe dabayein.";
+        return;
+      }
+      if (!CONFIG.NEWSLETTER_USER) {
+        status.innerHTML = "Newsletter jald launch ho raha hai! Tab tak <a href=\"https://wa.me/923440325566?text=Assalamu%20Alaikum!%20Mujhe%20daily%20Islamic%20reminders%20chahiye.\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--gold-soft)\">WhatsApp par daily reminders</a> hasil karen.";
+        return;
+      }
+      status.textContent = "Subscribe ho raha hai…";
+      fetch("https://buttondown.com/api/emails/embed-subscribe/" + encodeURIComponent(CONFIG.NEWSLETTER_USER), {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email })
+      }).then(function (r) {
+        if (r.ok) {
+          status.textContent = "🎉 Shukriya! Aap subscribe ho gaye — pehla reminder jald milega.";
+          newsForm.reset();
+        } else { throw new Error("bad"); }
+      }).catch(function () {
+        status.textContent = "Kuch masla hua — dobara koshish karen ya WhatsApp par rabta karen.";
+      });
+    });
+  }
+})();
