@@ -493,3 +493,25 @@ a.post-band:hover::before{transform:scale(1.12)}
   .hero h1{letter-spacing:-.02em}
   .post-card h3{font-size:17.5px}
 }
+
+/* ============ Dua Library promo (homepage) ============ */
+.dua-promo{display:flex;align-items:center;justify-content:space-between;gap:24px;text-decoration:none;
+  background:radial-gradient(700px 300px at 85% 20%,rgba(212,175,55,.28),transparent 60%),
+  linear-gradient(135deg,var(--navy-deep),var(--navy) 55%,var(--navy-2));
+  border:1px solid rgba(212,175,55,.4);border-radius:var(--radius-lg);
+  padding:44px 48px;color:#fff;box-shadow:var(--shadow-lg);overflow:hidden;position:relative;
+  transition:transform .28s var(--ease),box-shadow .28s var(--ease)}
+.dua-promo:hover{transform:translateY(-4px);box-shadow:0 28px 60px rgba(10,26,51,.35)}
+.dua-promo .kicker{color:var(--gold-soft)}
+.dua-promo h2{color:#fff;font-size:clamp(26px,3vw,34px);margin:.35em 0 .3em}
+.dua-promo p{color:#C9D4EA;font-weight:300;max-width:480px;margin:0 0 20px}
+.dua-promo .btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold-deep));
+  color:var(--navy-deep);font-weight:700;padding:13px 28px;border-radius:12px;
+  box-shadow:0 8px 22px rgba(212,175,55,.4)}
+.dua-promo-ar{font-family:"Amiri",serif;direction:rtl;font-size:clamp(40px,6vw,72px);
+  color:rgba(212,175,55,.35);white-space:nowrap;line-height:1.6}
+@media(max-width:640px){
+  .dua-promo{flex-direction:column;text-align:center;padding:36px 26px}
+  .dua-promo p{margin-left:auto;margin-right:auto}
+  .dua-promo-ar{font-size:44px}
+}
