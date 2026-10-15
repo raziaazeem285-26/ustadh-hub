@@ -31,3 +31,9 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Apne laptop par chalne wala personal AI assistant (Jarvis-style) — Gmail/calendar/GitHub connect karke har 20 min khud update hota hai, data machine par rehta hai.
   Note: early beta hai; AI model ke liye API key ya local model (Ollama) chahiye.
   Saved: 15 Oct 2026
+
+- **AionUi** (iOfficeAI, 27k+ stars, Apache-2.0)
+  https://github.com/iOfficeAI/AionUi
+  Laptop par AI workspace (Jarvis-style, visual interface) — Claude Code, Codex, Gemini, OpenClaw sab ek screen me. Built-in agent Google login se chalta hai, schedule tasks (raat ko auto kaam), mobile se access.
+  Download: https://github.com/iOfficeAI/AionUi/releases (Windows/macOS/Linux)
+  Saved: 15 Oct 2026
