@@ -33,7 +33,7 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Saved: 15 Oct 2026
 
 - **AionUi** (iOfficeAI, 27k+ stars, Apache-2.0)
-  https://github.com/iOfficeAI/AionUi
+  https://github.com/iOfficeAI/AionUi/releases
   Laptop par AI workspace (Jarvis-style, visual interface) — Claude Code, Codex, Gemini, OpenClaw sab ek screen me. Built-in agent Google login se chalta hai, schedule tasks (raat ko auto kaam), mobile se access.
   Download: https://github.com/iOfficeAI/AionUi/releases (Windows/macOS/Linux)
   Saved: 15 Oct 2026
@@ -42,4 +42,11 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   https://github.com/msitarzewski/agency-agents
   230+ specialist AI subagent prompts (Content Creator, Reality Checker, Growth Hacker waghera) — Claude Code/Cursor/Codex/OpenClaw ke liye.
   Note: alag tool nahi, prompt packs hain; AionUi + OpenClaw lagane ke baad kaam ayenge.
+  Saved: 15 Oct 2026
+
+- **agent-reach** (Panniantong, 97k+ stars, MIT)
+  https://github.com/Panniantong/agent-reach
+  AI agent ko internet parhne ki taqat dene wala FREE tool (Python CLI, zero API fees) — YouTube subtitles/search, web pages, RSS, GitHub, Twitter/X, Reddit, Facebook, Instagram sab ek command se. `agent-reach doctor` bataata hai kaunsi cheez chal rahi hai, kaunsi nahi.
+  Kaam: apne laptop ke agent (AionUi/OpenClaw/Claude Code) ke saath research — YouTube video ka khulasa, web search, news.
+  Note: YouTube/web/RSS bilkul free, koi setup nahi; Twitter/Reddit/FB/IG ke liye apne browser login se chalta hai (apne account ki safety ke liye chhota alag account behtar).
   Saved: 15 Oct 2026
