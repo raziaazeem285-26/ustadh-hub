@@ -37,3 +37,9 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Laptop par AI workspace (Jarvis-style, visual interface) — Claude Code, Codex, Gemini, OpenClaw sab ek screen me. Built-in agent Google login se chalta hai, schedule tasks (raat ko auto kaam), mobile se access.
   Download: https://github.com/iOfficeAI/AionUi/releases (Windows/macOS/Linux)
   Saved: 15 Oct 2026
+
+- **agency-agents** (msitarzewski, 159k+ stars, MIT)
+  https://github.com/msitarzewski/agency-agents
+  230+ specialist AI subagent prompts (Content Creator, Reality Checker, Growth Hacker waghera) — Claude Code/Cursor/Codex/OpenClaw ke liye.
+  Note: alag tool nahi, prompt packs hain; AionUi + OpenClaw lagane ke baad kaam ayenge.
+  Saved: 15 Oct 2026
