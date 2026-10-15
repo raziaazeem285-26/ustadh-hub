@@ -50,3 +50,13 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Kaam: apne laptop ke agent (AionUi/OpenClaw/Claude Code) ke saath research — YouTube video ka khulasa, web search, news.
   Note: YouTube/web/RSS bilkul free, koi setup nahi; Twitter/Reddit/FB/IG ke liye apne browser login se chalta hai (apne account ki safety ke liye chhota alag account behtar).
   Saved: 15 Oct 2026
+
+---
+
+## 🔌 Free APIs
+
+- **public-apis** (public-apis, 489k+ stars, MIT)
+  https://github.com/public-apis/public-apis
+  Hazaaron FREE APIs ki bari categorized list — weather, news, books, Quran, music, AI/ML, dictionaries waghera. Har API ke saath likha hota hai key chahiye ya nahi.
+  Kaam: future apps/tools ke liye free data — Ayah Thumbnail Generator me AlQuran Cloud API bhi isi list se mili thi.
+  Saved: 15 Oct 2026
