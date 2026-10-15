@@ -21,3 +21,13 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   21 lessons wala free AI course — Generative AI, prompt engineering, chat/image apps, AI agents. Har lesson me video + code examples.
   Khaas baat: **Urdu translation bhi mojood hai.** Thora technical hai (Python), lekin AI samajhne ke liye behtareen.
   Saved: 15 Oct 2026
+
+---
+
+## 🤖 AI Agents (laptop par chalne wale)
+
+- **OpenHuman** (tinyhumansai, 8.7k+ stars, GPL-3.0)
+  https://github.com/tinyhumansai/openhuman
+  Apne laptop par chalne wala personal AI assistant (Jarvis-style) — Gmail/calendar/GitHub connect karke har 20 min khud update hota hai, data machine par rehta hai.
+  Note: early beta hai; AI model ke liye API key ya local model (Ollama) chahiye.
+  Saved: 15 Oct 2026
