@@ -13,6 +13,13 @@
     if (toggle) toggle.setAttribute("aria-expanded", "false");
   }
   if (toggle && nav) {
+    /* dimmed backdrop (created once via JS so no HTML edits are needed on any page);
+       tapping it closes the menu */
+    var backdrop = document.createElement("div");
+    backdrop.className = "nav-backdrop";
+    backdrop.setAttribute("aria-hidden", "true");
+    document.body.appendChild(backdrop);
+    backdrop.addEventListener("click", closeMenu);
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("open");
       document.body.classList.toggle("menu-open", open);
