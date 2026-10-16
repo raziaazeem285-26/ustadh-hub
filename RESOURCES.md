@@ -78,3 +78,14 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Kaam: hamare 11am factory cron ko *behtar* banana — hook scoring, title+thumbnail linting, retention analysis (feedback loop!), Shorts finder. "Nothing gets published until you do it" — aap ka review+upload wala nizam barkarar rehta hai.
   Notes (imandari se): ye Claude Code ke liye bane hain, magar har SKILL.md kisi bhi chat me paste karke mode ki tarah chal sakta hai — aur main in ke tareeqe + Python tools apne computer par aap ki factory me laga sakta hun, aap ko kuch install nahi karna parega. Reel me nazar aane wala kumarde826581-del/ wala copy sirf fork hai — asal repo yehi hai.
   Saved: 16 Oct 2026 (Samarthh.builds ke reel se)
+
+---
+
+## 📸 Instagram Automation
+
+- **instagram-agent-skill** (Jakeschincariol, 1.5k+ stars, README ke mutabiq MIT)
+  https://github.com/Jakeschincariol/instagram-agent-skill
+  13 Claude skills jo Instagram account chalati hain — /ig-reel (26 hook formulas se scored Reel script + beat sheet), /ig-viral (aap ke niche me kya chal raha hai, outlier ranking), /ig-caption (caption lint — feed me "... more" se pehle nazar aane wale 125 characters ka preview), /ig-carousel, /ig-story (daily story sequence + DM funnel), /ig-profile (profile ko 12-part rubric par /100 score karke behtar likho), /ig-plan (haftay ka posting plan), /ig-human (humanizer — AI wali "slop" language, em dashes aur invisible watermark characters saaf karta hai), /ig-comment, /ig-reply, /ig-dm, /ig-repurpose, /ig-audit. Sath Python tools (hook scoring, humanizer).
+  Kaam: hamare daily social auto-posts (FB Page + Instagram) ko *behtar* banana — behtar hooks, captions, viral research, profile polish. "Nothing gets posted until you say yes" — aap ka approval wala nizam barkarar rehta hai.
+  Notes (imandari se): yehi wohi author hai jis ka youtube-agent-skill hum ne save kiya tha — dono ka style ek hai, dono ek doosre ko complement karte hain. Main in ke tareeqe + Python tools apne computer par aap ki factory/social pipeline me laga sakta hun — aap ko kuch install nahi karna parega. Aap ke Islamic brand ke liye hooks/captions customize karna parega (explicit Quran/Hadith hawale, decent tone, no "🔥🔥🔥" wali cheap engagement).
+  Saved: 16 Oct 2026 (Rajenlabs ke Facebook reel se — "Bas 2 Kaam Karo: Copy → Paste")
