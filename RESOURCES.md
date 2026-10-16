@@ -71,3 +71,10 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Kaam: YouTube *upload* automation — wohi hissa jo hamare 11am factory cron me abhi manual hai (script/thumbnail/SEO hum pehle hi banate hain).
   Notes (imandari se): (1) apne laptop par chalta hai (Node.js 18+) — laptop on rakhna parega; (2) free path ke liye Gemini API key chahiye — aap ki dono Gemini keys Google-side blocked hain, pehle ye masla hal karna hoga; (3) YouTube connect karne ke liye ek dafa Google Cloud setup (YouTube Data API v3 + OAuth) karna parega — thora technical, magar walkthrough guide karta hai; (4) is ke banaye videos hamare brand rules (explicit Quran/Hadith hawale, no faces) follow nahi karenge — customize karna parega.
   Saved: 16 Oct 2026 (Mahan Jafari ke Facebook reel se)
+
+- **youtube-agent-skill** (Jakeschincariol, 1.5k+ stars, README ke mutabiq MIT)
+  https://github.com/Jakeschincariol/youtube-agent-skill
+  11 Claude skills jo YouTube channel chalate hain — /yt-script (21 hook formulas se scored script), /yt-package (title+thumbnail ek pairing me lint), /yt-edit (transcript se edit decision list), /yt-comment (comments ke replies aap ki awaz me), /yt-plan (upload plan), /yt-viral (niche me kya chal raha hai), /yt-retention (retention export parho — viewers kahan chhorte hain), /yt-shorts (lambi video se Shorts nikalo), /yt-seo, /yt-chapters, /yt-audit. Sath 6 Python tools, koi dependency nahi (hookscore.py, title.py, deadair.py, chapters.py, retention.py, swipe.py).
+  Kaam: hamare 11am factory cron ko *behtar* banana — hook scoring, title+thumbnail linting, retention analysis (feedback loop!), Shorts finder. "Nothing gets published until you do it" — aap ka review+upload wala nizam barkarar rehta hai.
+  Notes (imandari se): ye Claude Code ke liye bane hain, magar har SKILL.md kisi bhi chat me paste karke mode ki tarah chal sakta hai — aur main in ke tareeqe + Python tools apne computer par aap ki factory me laga sakta hun, aap ko kuch install nahi karna parega. Reel me nazar aane wala kumarde826581-del/ wala copy sirf fork hai — asal repo yehi hai.
+  Saved: 16 Oct 2026 (Samarthh.builds ke reel se)
