@@ -79,6 +79,14 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Notes (imandari se): ye Claude Code ke liye bane hain, magar har SKILL.md kisi bhi chat me paste karke mode ki tarah chal sakta hai — aur main in ke tareeqe + Python tools apne computer par aap ki factory me laga sakta hun, aap ko kuch install nahi karna parega. Reel me nazar aane wala kumarde826581-del/ wala copy sirf fork hai — asal repo yehi hai.
   Saved: 16 Oct 2026 (Samarthh.builds ke reel se)
 
+
+- **Dola AI** (dolai.video — browser-based AI video generator, free tier)
+  https://www.dolai.video/
+  Text-to-video + image-to-video (Seedance models) — browser me chalta hai, free daily credits, credit card nahi chahiye, watermark-free downloads.
+  Kaam: **The Mother Monster** film ke 8 clips aur Mummy skit ke scenes — mere environment me real AI video generation region-blocked hai (403), is liye ye clips aap ko khud banane hain; Dola AI ka free tier is ke liye seedha option hai (Runway/Pika/Leonardo ke sath).
+  Notes (imandari se): (1) free tier personal/evaluation use ke liye hai — commercial license paid plans me hai ($19.9–$99.9/month); (2) clips 5–15 second ke hote hain — Mother Monster ke har scene ke liye theek hai; (3) reel me bataya gaya "account delete karke dobara banao" wala trick un ke terms ke khilaf hai — account ban ho sakta hai, ye na karein; (4) reel ka "300 million views" wala dawa verify nahi ho saka — hype ho sakta hai.
+  Saved: 16 Oct 2026 ("Listen to Tahir" ke Facebook reel se — DOLA)
+
 ---
 
 ## 📸 Instagram Automation
