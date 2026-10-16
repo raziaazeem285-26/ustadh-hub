@@ -97,3 +97,14 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Kaam: hamare daily social auto-posts (FB Page + Instagram) ko *behtar* banana — behtar hooks, captions, viral research, profile polish. "Nothing gets posted until you say yes" — aap ka approval wala nizam barkarar rehta hai.
   Notes (imandari se): yehi wohi author hai jis ka youtube-agent-skill hum ne save kiya tha — dono ka style ek hai, dono ek doosre ko complement karte hain. Main in ke tareeqe + Python tools apne computer par aap ki factory/social pipeline me laga sakta hun — aap ko kuch install nahi karna parega. Aap ke Islamic brand ke liye hooks/captions customize karna parega (explicit Quran/Hadith hawale, decent tone, no "🔥🔥🔥" wali cheap engagement).
   Saved: 16 Oct 2026 (Rajenlabs ke Facebook reel se — "Bas 2 Kaam Karo: Copy → Paste")
+
+---
+
+## 🎙️ Voice & Audio
+
+- **TTS** (coqui-ai, 46k+ stars, MPL-2.0)
+  https://github.com/coqui-ai/TTS
+  Open-source text-to-speech toolkit — 1100+ pretrained models, XTTS voice cloning (16 languages), apni awaz train karne ke tools. Python library; research aur production dono me istemal hota hai.
+  Kaam: future me English voiceover experiments — jab voiceover dobara shuru ho.
+  Notes (imandari se): (1) XTTS me **Urdu support NAHI** — 16 languages me Urdu shamil nahi (Razia ne kaha English hi kaafi hai, is liye save kiya); (2) achi speed ke liye GPU chahiye — aap ke laptop me NVIDIA GPU nahi, CPU par slow chalega; (3) voiceover ka kaam filhal PAUSED hai aap ke kehne par — ye future ke liye save hai, abhi istemal nahi ho raha.
+  Saved: 16 Oct 2026 (Razia ki request par)
