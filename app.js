@@ -130,9 +130,12 @@
     var name = $("leadName").value.trim(),
         phone = $("leadPhone").value.trim(),
         interest = $("leadInterest").value,
-        msg = $("leadMsg").value.trim();
+        msg = $("leadMsg").value.trim(),
+        ageEl = $("leadAge"),
+        age = ageEl ? ageEl.value.trim() : "";
     var text = "Assalam-o-Alaikum! Website admission inquiry:\n" +
       "Name: " + name + "\nWhatsApp: " + phone +
+      (age ? "\nChild's age: " + age : "") +
       "\nInterested in: " + interest +
       (msg ? "\nMessage: " + msg : "");
     window.open("https://wa.me/923440325566?text=" + encodeURIComponent(text), "_blank");
