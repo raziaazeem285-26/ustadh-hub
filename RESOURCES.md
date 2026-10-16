@@ -115,3 +115,12 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Kaam: Urdu voiceover — jab voiceover dobara shuru ho, ye sab se promising candidate hai.
   Notes (imandari se): (1) Tortoise **bohat slow** hai — ye us ki mashhoor kamzori hai; (2) quality ke liye audio samples sun kar faisla karein (samples: https://ahmedhanzala.github.io/urdu-tts/); (3) voiceover filhal paused tha — Razia ne khud restart karne ko kaha (16 Oct 2026).
   Saved: 16 Oct 2026 (Razia ki request par — "yes add karden")
+
+## 🎨 Web Design
+
+- **freebies** (uisual, 465 stars, free for commercial use — no credit needed)
+  https://github.com/uisual/freebies
+  Free landing page templates — plain HTML/CSS (koi framework nahi), responsive, black & white wireframe style taake apne brand colors mein customize karo. Har hafta naya template.
+  Kaam: mustaqbil mein naye landing pages (naye courses/offers) ke liye design inspiration ya bunyad.
+  Notes (imandari se): (1) formal license file nahi — author kehta hai bech sakte ho, credit zaroori nahi; (2) templates saada (black & white) hain — design mehnat khud karni paregi; (3) site ke liye Muse hi pages banata hai, ye sirf design reference ke liye hai.
+  Saved: 16 Oct 2026 (Razia ki request par — website-design topic se curated)
