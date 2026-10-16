@@ -108,3 +108,10 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Kaam: future me English voiceover experiments — jab voiceover dobara shuru ho.
   Notes (imandari se): (1) XTTS me **Urdu support NAHI** — 16 languages me Urdu shamil nahi (Razia ne kaha English hi kaafi hai, is liye save kiya); (2) achi speed ke liye GPU chahiye — aap ke laptop me NVIDIA GPU nahi, CPU par slow chalega; (3) voiceover ka kaam filhal PAUSED hai aap ke kehne par — ye future ke liye save hai, abhi istemal nahi ho raha.
   Saved: 16 Oct 2026 (Razia ki request par)
+
+- **urdu-tts** (ahmedHanzala, 46 stars, MIT)
+  https://github.com/ahmedHanzala/urdu-tts
+  Urdu TTS + South-Asian accent voice cloning — Tortoise-TTS jo South-Asian accent dataset par fine-tuned hai. Urdu script samajhta hai, awaz clone karta hai. Weights open (HuggingFace: zohann/urdu-tts), free Colab demo, audio samples website par.
+  Kaam: Urdu voiceover — jab voiceover dobara shuru ho, ye sab se promising candidate hai.
+  Notes (imandari se): (1) Tortoise **bohat slow** hai — ye us ki mashhoor kamzori hai; (2) quality ke liye audio samples sun kar faisla karein (samples: https://ahmedhanzala.github.io/urdu-tts/); (3) voiceover filhal paused tha — Razia ne khud restart karne ko kaha (16 Oct 2026).
+  Saved: 16 Oct 2026 (Razia ki request par — "yes add karden")
