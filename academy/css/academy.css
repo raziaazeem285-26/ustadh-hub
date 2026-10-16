@@ -179,3 +179,49 @@ a{color:inherit}
   .hero{padding:56px 0 64px}
   .section{padding:54px 0}
 }
+
+/* ======== PREMIUM UPGRADE: gradients, Islamic pattern, glow cards ======== */
+.hero{background:
+  radial-gradient(900px 420px at 85% -10%, rgba(168,111,214,.38), transparent 60%),
+  radial-gradient(720px 400px at 8% 110%, rgba(123,47,174,.30), transparent 60%),
+  linear-gradient(135deg,#2a063d 0%,#4b006e 55%,#6d2d8f 100%)}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.09'%3E%3Crect x='30' y='30' width='36' height='36'/%3E%3Crect x='30' y='30' width='36' height='36' transform='rotate(45 48 48)'/%3E%3Ccircle cx='48' cy='48' r='4'/%3E%3C/g%3E%3C/svg%3E")}
+.hero .wrap{position:relative;z-index:1}
+.page-hero{position:relative;overflow:hidden;background:
+  radial-gradient(700px 300px at 85% -20%, rgba(168,111,214,.30), transparent 60%),
+  linear-gradient(135deg,#2a063d,#4b006e 60%,#5f1f7d)}
+.page-hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.08'%3E%3Crect x='30' y='30' width='36' height='36'/%3E%3Crect x='30' y='30' width='36' height='36' transform='rotate(45 48 48)'/%3E%3Ccircle cx='48' cy='48' r='4'/%3E%3C/g%3E%3C/svg%3E")}
+.page-hero .wrap{position:relative;z-index:1}
+.section.alt{background:linear-gradient(180deg,#fdfbff 0%,#f4ecfc 100%)}
+.card{border-radius:20px;overflow:hidden;position:relative;
+  background:linear-gradient(180deg,#ffffff,#fdfaff);border:1px solid #e9ddf8;
+  box-shadow:0 8px 26px rgba(75,0,110,.07)}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;
+  background:linear-gradient(90deg,#a86fd6,#4b006e,#a86fd6)}
+.card:hover{transform:translateY(-7px);box-shadow:0 26px 60px rgba(75,0,110,.18)}
+.card .icon{background:linear-gradient(135deg,#7b2fae,#4b006e);box-shadow:0 8px 18px rgba(75,0,110,.25);color:#fff}
+.price-card{border-radius:22px}
+.price-card.hero-plan{background:linear-gradient(180deg,#ffffff,#f7efff);border:2px solid #a86fd6}
+.btn{position:relative;overflow:hidden}
+.btn::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;transform:skewX(-20deg);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transition:left .6s var(--ease)}
+.btn:hover::after{left:130%}
+.step{border-radius:20px;border:1px solid #e9ddf8}
+.step .num{background:linear-gradient(135deg,#a86fd6,#4b006e);color:#fff;box-shadow:0 8px 18px rgba(75,0,110,.25)}
+.faq-item{border-radius:14px}
+.faq-item.open{border-color:#c9a0e8;box-shadow:0 10px 26px rgba(75,0,110,.10)}
+.pill{background:#f4ecfc;color:#6d2d8f;border:1px solid #e0cbf5}
+.stat .n{background:linear-gradient(135deg,#7b2fae,#4b006e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#8e44ad;box-shadow:0 0 0 4px rgba(142,68,173,.14)}
+.form-card{border-radius:22px;border:1px solid #e9ddf8}
+.testi{border-radius:20px;border:1px solid #e9ddf8}
+.ribbon{background:linear-gradient(135deg,#a86fd6,#7b2fae);color:#fff;box-shadow:0 6px 16px rgba(75,0,110,.3)}
+/* thank-you (JazakAllah) block */
+.thanks{display:none;text-align:center;padding:26px 8px}
+.thanks.show{display:block;animation:pop .45s var(--ease)}
+@keyframes pop{from{transform:scale(.9);opacity:0}}
+.thanks .big{font-size:60px;line-height:1;margin-bottom:12px}
+.thanks h3{color:#4b006e;font-size:25px;margin-bottom:8px}
+.thanks p{color:var(--muted)}
