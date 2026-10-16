@@ -42,13 +42,13 @@
   panel.innerHTML =
     '<div class="ra-chat-head">' +
       '<div class="ra-chat-ava">RA</div>' +
-      '<div><h3>Razia Azeem Assistant</h3><p><span class="ra-online">● Online</span> — foran jawab</p></div>' +
+      '<div><h3>Razia Azeem Assistant</h3><p><span class="ra-online">● Online</span> — replies instantly</p></div>' +
       '<button class="ra-chat-x" id="ra-chat-x" aria-label="Close chat">✕</button>' +
     '</div>' +
     '<div id="ra-chat-msgs" aria-live="polite"></div>' +
     '<div id="ra-chips"></div>' +
     '<div class="ra-chat-input">' +
-      '<input id="ra-chat-in" type="text" placeholder="Apna sawal likhein…" autocomplete="off" maxlength="500" />' +
+      '<input id="ra-chat-in" type="text" placeholder="Type your question…" autocomplete="off" maxlength="500" />' +
       '<button id="ra-chat-send" aria-label="Send message">' +
         '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.4 20.4l17.5-8.4L3.4 3.6l-.01 6.53L14 12 3.39 13.87z"/></svg>' +
       '</button>' +
@@ -104,36 +104,36 @@
   }
   var RULES = [
     { k: ["salam", "assalam", "aoa", "adab", "hello", "hi", "hey", "salaam"],
-      r: "Walaikum Assalam! 🤲 Main Razia Azeem Official ka assistant hoon. Online classes, blog ya kisi sawal me madad chahiye?" },
+      r: "Walaikum Assalam! 🤲 I'm the Razia Azeem Official assistant. Need help with online classes, the blog, or anything else?" },
     { k: ["fee", "fees", "price", "qeemat", "pese", "paisy", "paisa", "kitne", "charges", "cost", "rate"],
-      r: "Fees ki final maloomat WhatsApp par confirm hoti hai: [WhatsApp par poochein](" + waHello("Online classes ki fees maloom karni hai.") + "). Lekin khushkhabri 🎁 — pehli **trial class BILKUL FREE** hai! Neeche button dabayein, apni detail dein, hum aap ki free trial class schedule karenge.",
-      chips: ["🎁 Free trial class chahiye", "💬 WhatsApp par poochein"] },
+      r: "Final fee details are confirmed on WhatsApp: [Ask on WhatsApp](" + waHello("I want to know the online class fees.") + "). But here's the good news 🎁 — the first **trial class is ABSOLUTELY FREE**! Tap the button below, share your details, and we'll schedule your free trial class.",
+      chips: ["🎁 I want a free trial class", "💬 Ask on WhatsApp"] },
     { k: ["time", "timing", "schedule", "waqt", "kab", "duration", "kitne baje"],
-      r: "Class timing aap ke country ke hisab se set hoti hai — final schedule WhatsApp par milta hai: [WhatsApp par poochein](" + waHello("Class timing maloom karni hai.") + ") 🕐 Yaad rahe, pehli **trial class FREE** hai 🎁 — detail dein, hum schedule karke batayenge.",
-      chips: ["🎁 Free trial class chahiye", "💬 WhatsApp par poochein"] },
+      r: "Class timings are set according to your country — the final schedule comes on WhatsApp: [Ask on WhatsApp](" + waHello("I want to know the class timings.") + ") 🕐 Remember, the first **trial class is FREE** 🎁 — share your details and we'll confirm the schedule.",
+      chips: ["🎁 I want a free trial class", "💬 Ask on WhatsApp"] },
     { k: ["trial", "free"],
       r: "__TRIAL__" },
     { k: ["class", "classes", "course", "admission", "dakhla", "join", "parhna", "seekhna", "student", "talib"],
-      r: "Online classes me dakhle ke liye WhatsApp par rabta karein: [" + WA_DISPLAY + "](" + WA_BASE + "). Khushkhabri 🎁 — pehli **trial class BILKUL FREE** hai!",
-      chips: ["🎁 Free trial class chahiye", "📋 Lead form bharein"] },
+      r: "To enroll in online classes, message us on WhatsApp: [" + WA_DISPLAY + "](" + WA_BASE + "). Good news 🎁 — the first **trial class is ABSOLUTELY FREE**!",
+      chips: ["🎁 I want a free trial class", "📋 Fill the lead form"] },
     { k: ["quran"],
-      r: "Quran par hamare articles yahan parhein: [Quran category](" + SITE + "/categories/quran.html) 📖 — har article me surah:ayat references ke saath." },
+      r: "Read our Quran articles here: [Quran category](" + SITE + "/categories/quran.html) 📖 — every article with surah:ayat references." },
     { k: ["hadith", "hadees"],
-      r: "Hadith par articles yahan: [Hadith category](" + SITE + "/categories/hadith.html) 📜 — mustanad hawalon ke saath." },
+      r: "Hadith articles here: [Hadith category](" + SITE + "/categories/hadith.html) 📜 — with authentic references." },
     { k: ["dua", "duain", "fazilat"],
-      r: "Duas aur un ki fazilat par articles: [Duas & Fazilat](" + SITE + "/categories/duas-fazilat.html) 🤲" },
+      r: "Articles on duas and their virtues: [Duas & Fazilat](" + SITE + "/categories/duas-fazilat.html) 🤲" },
     { k: ["stor", "kahani", "seerah", "waqia", "qissa"],
-      r: "Seerah aur Islamic stories yahan parhein: [Seerah & Stories](" + SITE + "/categories/seerah-stories.html) ✨" },
+      r: "Read seerah and Islamic stories here: [Seerah & Stories](" + SITE + "/categories/seerah-stories.html) ✨" },
     { k: ["video", "youtube", "yt"],
-      r: "Videos ke liye YouTube channel: [Razia Azeem Official](" + YT + ") ▶️ — subscribe karna na bhoolein!" },
+      r: "For videos, visit our YouTube channel: [Razia Azeem Official](" + YT + ") ▶️ — don't forget to subscribe!" },
     { k: ["blog", "article", "mazmoon", "mazameen", "website"],
-      r: "Blog par roz naye articles ate hain — Quran & Hadith references ke saath: [Saare articles](" + SITE + "/blog.html) 📝" },
+      r: "New articles on the blog every day — with Quran & Hadith references: [All articles](" + SITE + "/blog.html) 📝" },
     { k: ["contact", "rabta", "email", "mail"],
-      r: "Rabte ke tareeqe:\n📧 Email: " + EMAIL + "\n💬 WhatsApp: [" + WA_DISPLAY + "](" + WA_BASE + ")\n1 working day me jawab mil jata hai." },
+      r: "Ways to reach us:\n📧 Email: " + EMAIL + "\n💬 WhatsApp: [" + WA_DISPLAY + "](" + WA_BASE + ")\nWe reply within 1 working day." },
     { k: ["shukriya", "thanks", "thank", "jazak"],
-      r: "JazakAllah khair! 🤲 Kuch aur poochna ho to hazir hoon." },
+      r: "JazakAllah khair! 🤲 I'm here if you need anything else." },
     { k: ["insan", "human", "agent", "baji", "razia", "aapa", "madam", "miss", "maam"],
-      r: "Razia Azeem se direct baat ke liye WhatsApp behtreen hai: [" + WA_DISPLAY + "](" + WA_BASE + ") — 1 working day me jawab mil jata hai 💬" },
+      r: "WhatsApp is best for talking to Razia Azeem directly: [" + WA_DISPLAY + "](" + WA_BASE + ") — we reply within 1 working day 💬" },
     { k: ["lead", "form"],
       r: "__LEAD__" }
   ];
@@ -158,19 +158,19 @@
   }
   function startLead() {
     state = "lead_name"; lead = {};
-    botSay("Zaroor! Pehle apna **naam** batayein:");
+    botSay("Of course! First, please tell me your **name**:");
     setChips([]);
   }
   function startTrial() {
     state = "lead_name"; lead = { interest: "Free trial class" };
-    botSay("Bohat khoob! 🎁 Free trial class ke liye pehle apna **naam** batayein:");
+    botSay("Wonderful! 🎁 For the free trial class, first tell me your **name**:");
     setChips([]);
   }
   function leadSummary() {
-    return "📋 Aap ki request:\n• Naam: " + lead.name +
+    return "📋 Your request:\n• Name: " + lead.name +
       "\n• WhatsApp: " + lead.phone +
-      "\n• Dilchaspi: " + lead.interest +
-      (lead.msg ? "\n• Paigham: " + lead.msg : "");
+      "\n• Interested in: " + lead.interest +
+      (lead.msg ? "\n• Message: " + lead.msg : "");
   }
   function leadDone() {
     var text = "Assalam-o-Alaikum! Website admission inquiry:\n" +
@@ -183,12 +183,12 @@
       addMsg(leadSummary(), "bot");
       addRaw(
         '<a class="ra-wa-btn" href="' + WA_BASE + "?text=" + encodeURIComponent(text) +
-        '" target="_blank" rel="noopener">💬 WhatsApp par bhejein</a><br>' +
+        '" target="_blank" rel="noopener">💬 Send via WhatsApp</a><br>' +
         '<a class="ra-mail-btn" href="mailto:' + EMAIL + "?subject=" +
         encodeURIComponent("Website lead: " + lead.name) + "&body=" +
-        encodeURIComponent(text) + '">📧 Email par bhejein</a>');
+        encodeURIComponent(text) + '">📧 Send via Email</a>');
       setTimeout(function () {
-        addMsg("Shukriya " + lead.name + "! 🤲 Request tayyar hai — upar wala button dabayein, hum 1 working day me rabta karenge.", "bot");
+        addMsg("Thank you " + lead.name + "! 🤲 Your request is ready — tap the button above, and we'll contact you within 1 working day.", "bot");
         setChips(DEFAULT_CHIPS);
       }, 700);
     });
@@ -210,40 +210,40 @@
     setChips([]);
 
     var low = text.toLowerCase();
-    if (low === "cancel" || low === "rehne dein" || low === "rehne den") {
+    if (low === "cancel" || low === "never mind" || low === "rehne dein" || low === "rehne den") {
       state = "idle"; lead = {};
-      botSay("Koi baat nahi! Kuch aur poochna ho to batayein 🙂");
+      botSay("No problem! Let me know if you need anything else 🙂");
       setChips(DEFAULT_CHIPS); return;
     }
     if (state === "idle" && low.indexOf("free trial") > -1) { startTrial(); return; }
-    if (text === "💬 WhatsApp par poochein") {
-      window.open(waHello("Assalam-o-Alaikum! Mujhe online classes ke baare me maloomat chahiye."), "_blank");
-      botSay("WhatsApp khul raha hai — wahan apna sawal likhein 💬");
+    if (text === "💬 Ask on WhatsApp") {
+      window.open(waHello("I would like information about online classes."), "_blank");
+      botSay("Opening WhatsApp — type your question there 💬");
       setChips(DEFAULT_CHIPS); return;
     }
 
     if (state === "lead_name") {
-      if (text.length < 2) { botSay("Naam thora wazeh likhein please:"); return; }
+      if (text.length < 2) { botSay("Please write your name a bit more clearly:"); return; }
       lead.name = text; state = "lead_phone";
-      botSay("Shukriya " + text + "! Ab apna **WhatsApp number** likhein (misal: 0344 1234567):");
+      botSay("Thank you " + text + "! Now please write your **WhatsApp number** (e.g. 0344 1234567):");
       return;
     }
     if (state === "lead_phone") {
       var ph = validPhone(text);
-      if (!ph) { botSay("Number samajh nahi aya — dobara likhein (misal: 0344 1234567):"); return; }
+      if (!ph) { botSay("I couldn't understand that number — please write it again (e.g. 0344 1234567):"); return; }
       lead.phone = ph; state = "lead_interest";
-      botSay("Kis cheez me interested hain?");
-      setChips(["🎁 Free trial class", "Online classes", "Blog topic request", "Sawal poochna hai", "Kuch aur"]);
+      botSay("What are you interested in?");
+      setChips(["🎁 Free trial class", "Online classes", "Blog topic request", "I have a question", "Something else"]);
       return;
     }
     if (state === "lead_interest") {
       lead.interest = text; state = "lead_msg";
-      botSay("Koi paigham likhna chahein? (optional hai)");
-      setChips(["Skip karein"]);
+      botSay("Would you like to add a message? (optional)");
+      setChips(["Skip"]);
       return;
     }
     if (state === "lead_msg") {
-      lead.msg = (low === "skip karein" || low === "skip") ? "" : text;
+      lead.msg = (low === "skip") ? "" : text;
       leadDone(); return;
     }
 
@@ -255,8 +255,8 @@
       botSay(rule.r);
       setChips(rule.chips || DEFAULT_CHIPS);
     } else {
-      botSay("Maaf kijiye, main yeh samajh nahi paya. Apna sawal [WhatsApp par direct poochein](" +
-        WA_BASE + ") — wahan Razia Azeem khud jawab dengi 💬");
+      botSay("Sorry, I didn't understand that. [Ask your question directly on WhatsApp](" +
+        WA_BASE + ") — Razia Azeem herself will reply there 💬");
       setChips(DEFAULT_CHIPS);
     }
   }
@@ -269,7 +269,7 @@
     if (open && !greeted) {
       greeted = true;
       showTyping(function () {
-        addMsg("Assalam-o-Alaikum! 🤲 Main Razia Azeem Official ka assistant hoon.\nOnline classes, blog ya kisi sawal me madad chahiye?", "bot");
+        addMsg("Assalam-o-Alaikum! 🤲 I'm the Razia Azeem Official assistant.\nNeed help with online classes, the blog, or anything else?", "bot");
         setChips(DEFAULT_CHIPS);
       });
     }

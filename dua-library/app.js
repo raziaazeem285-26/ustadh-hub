@@ -124,6 +124,6 @@
     .then(function (data) { duas = data || []; renderChips(); render(); })
     .catch(function () {
       empty.hidden = false; grid.style.display = "none";
-      empty.querySelector("p").textContent = "Duas load nahi ho saken — page refresh karen.";
+      empty.querySelector("p").textContent = "Couldn't load duas — please refresh the page.";
     });
 })();

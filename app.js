@@ -139,7 +139,7 @@
       "\nInterested in: " + interest +
       (msg ? "\nMessage: " + msg : "");
     window.open("https://wa.me/923440325566?text=" + encodeURIComponent(text), "_blank");
-    $("leadStatus").textContent = "WhatsApp khul raha hai — bas Send dabayein. Shukriya!";
+    $("leadStatus").textContent = "Opening WhatsApp — just press Send. Thank you!";
     leadForm.reset();
   });
 
@@ -209,7 +209,7 @@
     var cards = grid ? Array.prototype.slice.call(grid.querySelectorAll(".post-card")) : [];
     var noRes = document.createElement("div");
     noRes.className = "no-results";
-    noRes.innerHTML = '<span class="big">🔍</span><h3>Kuch nahi mila</h3><p>Alfaaz badal kar dobara koshish karen — masalan "dua", "quran", "sabr".</p>';
+    noRes.innerHTML = '<span class="big">🔍</span><h3>Nothing found</h3><p>Try different words — e.g. "dua", "quran", "sabr".</p>';
     function runSearch() {
       var q = searchInput.value.trim().toLowerCase();
       var n = 0;
@@ -263,7 +263,7 @@
       var csec = document.createElement("section");
       csec.className = "comments-sec wrap reveal";
       if (CONFIG.GISCUS_ENABLED && CONFIG.GISCUS_CATEGORY_ID) {
-        csec.innerHTML = "<h2>Comments</h2><p>Apni raay likhen — sawal ho ya tajweez, khush aamdeed!</p><div class=\"giscus-wrap\" id=\"giscusWrap\"></div>";
+        csec.innerHTML = "<h2>Comments</h2><p>Share your thoughts — questions or suggestions are welcome!</p><div class=\"giscus-wrap\" id=\"giscusWrap\"></div>";
         article.parentNode.insertBefore(csec, sec.nextSibling);
         var g = document.createElement("script");
         g.src = "https://giscus.app/client.js";
@@ -282,9 +282,9 @@
         g.async = true;
         document.getElementById("giscusWrap").appendChild(g);
       } else {
-        csec.innerHTML = "<h2>Comments</h2><p>Apni raay likhen — sawal ho ya tajweez, khush aamdeed!</p>" +
+        csec.innerHTML = "<h2>Comments</h2><p>Share your thoughts — questions or suggestions are welcome!</p>" +
           "<div class=\"giscus-wrap\"><div class=\"giscus-soon\"><span class=\"big\">💬</span>" +
-          "<p><strong>Comments jald aa rahe hain!</strong><br>Tab tak apna sawal chatbot se poochhen ya WhatsApp par bhejen.</p></div></div>";
+          "<p><strong>Comments coming soon!</strong><br>Until then, ask the chatbot or message us on WhatsApp.</p></div></div>";
         article.parentNode.insertBefore(csec, sec.nextSibling);
       }
 
@@ -307,25 +307,25 @@
       var email = document.getElementById("newsEmail").value.trim();
       var status = document.getElementById("newsStatus");
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        status.textContent = "Sahih email likhen, phir subscribe dabayein.";
+        status.textContent = "Please enter a valid email, then press subscribe.";
         return;
       }
       if (!CONFIG.NEWSLETTER_USER) {
-        status.innerHTML = "Newsletter jald launch ho raha hai! Tab tak <a href=\"https://wa.me/923440325566?text=Assalamu%20Alaikum!%20Mujhe%20daily%20Islamic%20reminders%20chahiye.\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--gold-soft)\">WhatsApp par daily reminders</a> hasil karen.";
+        status.innerHTML = "Newsletter launching soon! Until then, get <a href=\"https://wa.me/923440325566?text=Assalamu%20Alaikum!%20I%20want%20daily%20Islamic%20reminders.\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--gold-soft)\">daily reminders on WhatsApp</a>.";
         return;
       }
-      status.textContent = "Subscribe ho raha hai…";
+      status.textContent = "Subscribing…";
       fetch("https://buttondown.com/api/emails/embed-subscribe/" + encodeURIComponent(CONFIG.NEWSLETTER_USER), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: email })
       }).then(function (r) {
         if (r.ok) {
-          status.textContent = "🎉 Shukriya! Aap subscribe ho gaye — pehla reminder jald milega.";
+          status.textContent = "🎉 Thank you! You're subscribed — your first reminder is on its way.";
           newsForm.reset();
         } else { throw new Error("bad"); }
       }).catch(function () {
-        status.textContent = "Kuch masla hua — dobara koshish karen ya WhatsApp par rabta karen.";
+        status.textContent = "Something went wrong — please try again or contact us on WhatsApp.";
       });
     });
   }
