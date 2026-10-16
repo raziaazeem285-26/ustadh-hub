@@ -1,0 +1,35 @@
+# Razia Azeem Academy
+
+> Live one-on-one online Quran classes for kids and adults in the UK, USA and Australia.
+> Qualified male and female teachers. 7 courses. 3-day FREE trial. 10% sibling discount.
+
+## Website
+- Home: https://ustadh-hub.vercel.app/academy/index.html
+- All courses: https://ustadh-hub.vercel.app/academy/courses.html
+- Pricing: https://ustadh-hub.vercel.app/academy/pricing.html
+- Free trial: https://ustadh-hub.vercel.app/academy/free-trial.html
+- Teachers: https://ustadh-hub.vercel.app/academy/teachers.html
+- UK: https://ustadh-hub.vercel.app/academy/uk.html
+- USA: https://ustadh-hub.vercel.app/academy/usa.html
+- Australia: https://ustadh-hub.vercel.app/academy/australia.html
+
+## Courses
+1. Noorani Qaida — Arabic alphabet and pronunciation for beginners (kids 4+ and adults)
+2. Nazra Quran — fluent Quran reading, Juz 1 to 30
+3. Hifz-ul-Quran — full Quran memorization with Sabaq/Sabqi/Manzil revision system
+4. Tajweed-ul-Quran — advanced recitation rules and Ijazah preparation
+5. Islamic Studies for Kids — Seerah, Akhlaq, Kalimas, daily duas
+6. Namaz & Masnoon Duas — Salah step by step with authentic supplications
+7. Quran Translation — understand selected Surahs in easy English/Urdu
+
+## Pricing (per month)
+- USA: $35 (2x/week), $49 (3x/week), $79 (5x/week)
+- UK: £28 (2x/week), £39 (3x/week), £59 (5x/week)
+- Australia: AU$55 (2x/week), AU$79 (3x/week), AU$119 (5x/week)
+- 10% sibling discount. 3-day free trial, no card required.
+
+## Key facts
+- Classes: 30 minutes, live one-on-one via video call, 7 days a week
+- Teachers: background-checked, English-speaking, male and female available
+- Timings: UK evenings (GMT/BST), USA evenings (EST-PST), Australia afternoons (AEST)
+- Contact: WhatsApp +92 344 0325566, email raziaazeem285@gmail.com
