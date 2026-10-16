@@ -60,3 +60,14 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Hazaaron FREE APIs ki bari categorized list — weather, news, books, Quran, music, AI/ML, dictionaries waghera. Har API ke saath likha hota hai key chahiye ya nahi.
   Kaam: future apps/tools ke liye free data — Ayah Thumbnail Generator me AlQuran Cloud API bhi isi list se mili thi.
   Saved: 15 Oct 2026
+
+---
+
+## 🎬 YouTube Automation
+
+- **youtube-automation-agent** (darkzOGx, 4.3k+ stars, free & open source)
+  https://github.com/darkzOGx/youtube-automation-agent
+  7 AI agents ki team jo YouTube channel 24/7 chalati hai — topic strategy, script writing, thumbnails, SEO, video production, publishing, aur analytics feedback loop (har video ki performance se seekh kar agli videos behtar). Live dashboard (localhost:3456). `npm install` + `npm run walkthrough` se guided setup.
+  Kaam: YouTube *upload* automation — wohi hissa jo hamare 11am factory cron me abhi manual hai (script/thumbnail/SEO hum pehle hi banate hain).
+  Notes (imandari se): (1) apne laptop par chalta hai (Node.js 18+) — laptop on rakhna parega; (2) free path ke liye Gemini API key chahiye — aap ki dono Gemini keys Google-side blocked hain, pehle ye masla hal karna hoga; (3) YouTube connect karne ke liye ek dafa Google Cloud setup (YouTube Data API v3 + OAuth) karna parega — thora technical, magar walkthrough guide karta hai; (4) is ke banaye videos hamare brand rules (explicit Quran/Hadith hawale, no faces) follow nahi karenge — customize karna parega.
+  Saved: 16 Oct 2026 (Mahan Jafari ke Facebook reel se)
