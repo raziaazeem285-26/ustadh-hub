@@ -25,6 +25,7 @@
       <span class="dropdown"><a href="courses.html"><b>All Courses</b></a><a href="course-noorani-qaida.html">Noorani Qaida</a><a href="course-nazra-quran.html">Nazra Quran</a><a href="course-hifz-quran.html">Hifz-ul-Quran</a><a href="course-tajweed-quran.html">Tajweed-ul-Quran</a><a href="course-islamic-studies.html">Islamic Studies for Kids</a><a href="course-namaz-duas.html">Namaz & Masnoon Duas</a><a href="course-quran-translation.html">Quran Translation</a></span></span>
     <a href="teachers.html">Teachers</a>
     <a href="pricing.html">Pricing</a>
+    <a href="register.html">Register</a>
     <span class="has-drop"><button class="drop-btn">Countries ▾</button>
       <span class="dropdown"><a href="uk.html">🇬🇧 United Kingdom</a><a href="usa.html">🇺🇸 United States</a><a href="australia.html">🇦🇺 Australia</a></span></span>
     <a href="about.html">About</a>
@@ -52,6 +53,11 @@
       <button class="btn" type="submit" style="width:100%">Book FREE Trial via WhatsApp →</button>
       <p class="note" style="margin-top:12px;text-align:center">Submitting opens WhatsApp with your details pre-filled. We reply within hours, in shaa Allah.</p>
     </form>
+    <div class="thanks" id="trial-thanks">
+      <div class="big">🤲</div>
+      <h3>JazakAllah Khair!</h3>
+      <p>Your free trial request has been received.<br>We are opening WhatsApp — just press send, in shaa Allah.</p>
+    </div>
   </div>
   <div class="grid c3 reveal" style="margin-top:40px">
     <div class="card"><h3>1️⃣ You Book</h3><p class="note">1-minute form — pick your course and teacher preference.</p></div>
@@ -66,6 +72,8 @@ document.getElementById('trial-form').addEventListener('submit',function(e){
     +'%0AWhatsApp: '+encodeURIComponent(f.get('phone'))+'%0ACountry: '+encodeURIComponent(f.get('country'))
     +'%0ACourse: '+encodeURIComponent(f.get('course'))+'%0ATeacher: '+encodeURIComponent(f.get('teacher'))
     +'%0AChild age: '+encodeURIComponent(f.get('age')||'-');
+  document.getElementById('trial-form').style.display='none';
+  document.getElementById('trial-thanks').classList.add('show');
   window.open('https://wa.me/923440325566?text='+t,'_blank');
 });
 </script>
@@ -75,7 +83,7 @@ document.getElementById('trial-form').addEventListener('submit',function(e){
     <div><div class="foot-brand">🕌 Razia Azeem <b>Academy</b></div>
       <p style="font-size:14px">Live one-on-one online Quran classes for kids and adults in the UK, USA and Australia — with qualified male &amp; female teachers.</p>
       <p style="font-size:14px">📱 <a href="https://wa.me/923440325566">WhatsApp: +92 344 0325566</a><br>✉️ <a href="mailto:raziaazeem285@gmail.com">raziaazeem285@gmail.com</a></p></div>
-    <div><h4>Academy</h4><a href="about.html">About Us</a><a href="teachers.html">Our Teachers</a><a href="pricing.html">Pricing</a><a href="free-trial.html">Free Trial</a><a href="contact.html">Contact</a></div>
+    <div><h4>Academy</h4><a href="about.html">About Us</a><a href="teachers.html">Our Teachers</a><a href="pricing.html">Pricing</a><a href="register.html">Register</a><a href="free-trial.html">Free Trial</a><a href="contact.html">Contact</a></div>
     <div><h4>Courses</h4><a href="course-noorani-qaida.html">Noorani Qaida</a><a href="course-nazra-quran.html">Nazra Quran</a><a href="course-hifz-quran.html">Hifz-ul-Quran</a><a href="course-tajweed-quran.html">Tajweed-ul-Quran</a><a href="course-islamic-studies.html">Islamic Studies for Kids</a><a href="course-namaz-duas.html">Namaz & Masnoon Duas</a><a href="course-quran-translation.html">Quran Translation</a></div>
     <div><h4>Countries</h4><a href="uk.html">🇬🇧 UK</a><a href="usa.html">🇺🇸 USA</a><a href="australia.html">🇦🇺 Australia</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
   </div>

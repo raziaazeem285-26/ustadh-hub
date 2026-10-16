@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration — Admissions Open | Razia Azeem Academy</title>
+<meta name="description" content="Register for online Quran classes at Razia Azeem Academy. Admissions open for UK, USA & Australia. 3-day free trial included.">
+<link rel="canonical" href="https://ustadh-hub.vercel.app/academy/register.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Student Registration — Admissions Open | Razia Azeem Academy">
+<meta property="og:description" content="Register for online Quran classes at Razia Azeem Academy. Admissions open for UK, USA & Australia. 3-day free trial included.">
+<meta property="og:url" content="https://ustadh-hub.vercel.app/academy/register.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="css/academy.css">
+
+</head>
+<body>
+
+<header class="site-header"><div class="wrap nav-wrap">
+  <a class="brand" href="index.html">🕌 Razia Azeem <b>Academy</b><small>ONLINE QURAN ACADEMY</small></a>
+  <button class="burger" aria-label="Menu">☰</button>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <span class="has-drop"><button class="drop-btn">Courses ▾</button>
+      <span class="dropdown"><a href="courses.html"><b>All Courses</b></a><a href="course-noorani-qaida.html">Noorani Qaida</a><a href="course-nazra-quran.html">Nazra Quran</a><a href="course-hifz-quran.html">Hifz-ul-Quran</a><a href="course-tajweed-quran.html">Tajweed-ul-Quran</a><a href="course-islamic-studies.html">Islamic Studies for Kids</a><a href="course-namaz-duas.html">Namaz & Masnoon Duas</a><a href="course-quran-translation.html">Quran Translation</a></span></span>
+    <a href="teachers.html">Teachers</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="register.html" class="active">Register</a>
+    <span class="has-drop"><button class="drop-btn">Countries ▾</button>
+      <span class="dropdown"><a href="uk.html">🇬🇧 United Kingdom</a><a href="usa.html">🇺🇸 United States</a><a href="australia.html">🇦🇺 Australia</a></span></span>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-nav" href="free-trial.html">🎁 Free Trial</a>
+  </nav>
+</div></header>
+
+<section class="page-hero"><div class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / Register</p>
+  <h1>📝 Student Registration</h1><p>Admissions are open! Fill in the form below — we will contact you on WhatsApp to confirm your classes.</p>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="form-card reveal">
+    <form id="reg-form">
+      <div class="grid c2">
+        <div class="field"><label>Parent's Name *</label><input required name="name" placeholder="e.g. Ahmed Khan"></div>
+        <div class="field"><label>WhatsApp Number *</label><input required name="phone" placeholder="e.g. +44 7700 900000"></div>
+      </div>
+      <div class="grid c2">
+        <div class="field"><label>Email</label><input type="email" name="email" placeholder="you@example.com"></div>
+        <div class="field"><label>Country *</label><select name="country" required>
+          <option value="">Select...</option><option>United Kingdom</option><option>United States</option><option>Australia</option><option>Other</option></select></div>
+      </div>
+      <div class="grid c2">
+        <div class="field"><label>Student's Name</label><input name="student" placeholder="e.g. Maryam"></div>
+        <div class="field"><label>Student's Age</label><input name="age" placeholder="e.g. 7"></div>
+      </div>
+      <div class="grid c2">
+        <div class="field"><label>Course *</label><select name="course" required>
+          <option>Noorani Qaida</option><option>Nazra Quran</option><option>Hifz-ul-Quran</option><option>Tajweed-ul-Quran</option><option>Islamic Studies for Kids</option><option>Namaz &amp; Masnoon Duas</option><option>Quran Translation</option><option>Not sure — advise me</option></select></div>
+        <div class="field"><label>Classes per Week *</label><select name="plan" required>
+          <option>2 classes / week</option><option selected>3 classes / week (Most Popular)</option><option>5 classes / week</option></select></div>
+      </div>
+      <div class="grid c2">
+        <div class="field"><label>Teacher Preference</label><select name="teacher">
+          <option>Female teacher</option><option>Male teacher</option><option>No preference</option></select></div>
+        <div class="field"><label>Preferred Days / Timings</label><input name="timing" placeholder="e.g. Mon–Fri evenings"></div>
+      </div>
+      <button class="btn" type="submit" style="width:100%">Submit Registration →</button>
+      <p class="note" style="margin-top:12px;text-align:center">🎁 Every registration starts with a <b>3-day FREE trial</b> — no card required.</p>
+    </form>
+    <div class="thanks" id="reg-thanks">
+      <div class="big">🤲</div>
+      <h3>JazakAllah Khair!</h3>
+      <p>Your registration has been received.<br>We are opening WhatsApp — just press send, and we will confirm your classes, in shaa Allah.</p>
+      <a class="btn" id="reg-wa" href="#" target="_blank" rel="noopener" style="margin-top:14px">💬 Open WhatsApp</a>
+    </div>
+  </div>
+  <div class="grid c3 reveal" style="margin-top:40px">
+    <div class="card"><h3>1️⃣ Register</h3><p class="note">Fill the form — takes less than a minute.</p></div>
+    <div class="card"><h3>2️⃣ We Confirm</h3><p class="note">We message you on WhatsApp with teacher &amp; slot options.</p></div>
+    <div class="card"><h3>3️⃣ Start Learning</h3><p class="note">Begin with 3 FREE trial classes.</p></div>
+  </div>
+</div></section>
+<script>
+document.getElementById('reg-form').addEventListener('submit',function(e){
+  e.preventDefault();var f=new FormData(e.target);
+  var t='Assalamualaikum! I want to REGISTER for Quran classes.%0A%0AParent: '+encodeURIComponent(f.get('name'))
+    +'%0AWhatsApp: '+encodeURIComponent(f.get('phone'))+'%0AEmail: '+encodeURIComponent(f.get('email')||'-')
+    +'%0ACountry: '+encodeURIComponent(f.get('country'))+'%0AStudent: '+encodeURIComponent(f.get('student')||'-')
+    +' (Age: '+encodeURIComponent(f.get('age')||'-')+')%0ACourse: '+encodeURIComponent(f.get('course'))
+    +'%0APlan: '+encodeURIComponent(f.get('plan'))+'%0ATeacher: '+encodeURIComponent(f.get('teacher'))
+    +'%0ATimings: '+encodeURIComponent(f.get('timing')||'-');
+  var url='https://wa.me/923440325566?text='+t;
+  document.getElementById('reg-wa').href=url;
+  document.getElementById('reg-form').style.display='none';
+  document.getElementById('reg-thanks').classList.add('show');
+  window.open(url,'_blank');
+});
+</script>
+
+<footer class="site-footer"><div class="wrap">
+  <div class="foot-grid">
+    <div><div class="foot-brand">🕌 Razia Azeem <b>Academy</b></div>
+      <p style="font-size:14px">Live one-on-one online Quran classes for kids and adults in the UK, USA and Australia — with qualified male &amp; female teachers.</p>
+      <p style="font-size:14px">📱 <a href="https://wa.me/923440325566">WhatsApp: +92 344 0325566</a><br>✉️ <a href="mailto:raziaazeem285@gmail.com">raziaazeem285@gmail.com</a></p></div>
+    <div><h4>Academy</h4><a href="about.html">About Us</a><a href="teachers.html">Our Teachers</a><a href="pricing.html">Pricing</a><a href="register.html">Register</a><a href="free-trial.html">Free Trial</a><a href="contact.html">Contact</a></div>
+    <div><h4>Courses</h4><a href="course-noorani-qaida.html">Noorani Qaida</a><a href="course-nazra-quran.html">Nazra Quran</a><a href="course-hifz-quran.html">Hifz-ul-Quran</a><a href="course-tajweed-quran.html">Tajweed-ul-Quran</a><a href="course-islamic-studies.html">Islamic Studies for Kids</a><a href="course-namaz-duas.html">Namaz & Masnoon Duas</a><a href="course-quran-translation.html">Quran Translation</a></div>
+    <div><h4>Countries</h4><a href="uk.html">🇬🇧 UK</a><a href="usa.html">🇺🇸 USA</a><a href="australia.html">🇦🇺 Australia</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+  </div>
+  <div class="copyright"><span>© 2026 Razia Azeem Academy. All rights reserved.</span><span>Made with 🤍 for the Ummah</span></div>
+</div></footer>
+
+<button id="ac-chat-fab" aria-label="Chat with us">💬</button>
+<div id="ac-chat-box" role="dialog" aria-label="Academy chat">
+  <div id="ac-chat-head"><b>🕌 Razia Azeem Academy</b><small>Typically replies instantly · then WhatsApp</small></div>
+  <div id="ac-chat-msgs"></div>
+  <div id="ac-chat-quick">
+    <button>Courses</button><button>Fees</button><button>Free trial</button><button>Female teacher</button>
+  </div>
+  <div id="ac-chat-input"><input id="ac-chat-in" placeholder="Type your question..." autocomplete="off">
+  <button id="ac-chat-send">Send</button></div>
+</div>
+<script src="js/academy.js"></script>
+<script src="js/academy-chatbot.js"></script>
+</body>
+</html>
