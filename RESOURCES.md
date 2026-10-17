@@ -124,3 +124,14 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Kaam: mustaqbil mein naye landing pages (naye courses/offers) ke liye design inspiration ya bunyad.
   Notes (imandari se): (1) formal license file nahi — author kehta hai bech sakte ho, credit zaroori nahi; (2) templates saada (black & white) hain — design mehnat khud karni paregi; (3) site ke liye Muse hi pages banata hai, ye sirf design reference ke liye hai.
   Saved: 16 Oct 2026 (Razia ki request par — website-design topic se curated)
+
+---
+
+## 📚 Book Publishing (Amazon KDP)
+
+- **beyondwords** (beyondtahir, 83 stars, MIT)
+  https://github.com/beyondtahir/beyondwords
+  AI book production house — Amazon KDP ke liye poori workflow: niche research → manuscript likhna → cover/interior design → KDP publish → marketing. AI assistant me install hone wali skill (v1.1.0, Python 3.11+).
+  Kaam: Razia ki Islamic content (dua library, kids' stories, blogs) se **asal books** — pehli candidate: "Bachon ki 10 Aasan Duain" lead-magnet PDF ko expand karke KDP kids' dua book. Nayi income stream (mehnat ki halal kamai).
+  Notes (imandari se): (1) bilkul NAYI hai (83 stars, Oct 2026 me launch) — unproven, pehle chhoti book se test karein; (2) ye AI assistant ki skill hai — technical kaam Muse karega, aap ko kuch install nahi karna parega; (3) KDP account banana + final publish aap ka kaam (account-level); (4) Amazon par AI-generated content **disclose karna zaroori** hai; (5) Islamic content ki accuracy review aap khud karengi — brand rule (explicit Quran/Hadith hawale) books par bhi laagu; (6) isi creator ka Gemini Spark wala reel hype tha — repo khud theek lagta hai (real docs, releases, SECURITY.md), lekin marketing par aankh band karke bharosa na karein.
+  Saved: 18 Oct 2026 (husband ke Instagram reel se)
