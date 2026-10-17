@@ -120,25 +120,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/courses.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/teachers.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/pricing.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/free-trial.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/about.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/contact.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/privacy.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/terms.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/uk.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/usa.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/australia.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/course-noorani-qaida.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/course-nazra-quran.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/course-hifz-quran.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/course-tajweed-quran.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/course-islamic-studies.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/course-namaz-duas.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ustadh-hub.vercel.app/academy/course-quran-translation.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url>
     <loc>https://ustadh-hub.vercel.app/posts/blessed-mornings-fajr-adhkar.html</loc>
     <lastmod>2026-10-17</lastmod>

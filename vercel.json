@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/academy/:path*",
+      "destination": "https://razia-azeem-academy-raziaazeem285-26.vercel.app/:path*",
+      "permanent": true
+    }
+  ]
+}
