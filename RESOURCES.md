@@ -135,3 +135,14 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Kaam: Razia ki Islamic content (dua library, kids' stories, blogs) se **asal books** — pehli candidate: "Bachon ki 10 Aasan Duain" lead-magnet PDF ko expand karke KDP kids' dua book. Nayi income stream (mehnat ki halal kamai).
   Notes (imandari se): (1) bilkul NAYI hai (83 stars, Oct 2026 me launch) — unproven, pehle chhoti book se test karein; (2) ye AI assistant ki skill hai — technical kaam Muse karega, aap ko kuch install nahi karna parega; (3) KDP account banana + final publish aap ka kaam (account-level); (4) Amazon par AI-generated content **disclose karna zaroori** hai; (5) Islamic content ki accuracy review aap khud karengi — brand rule (explicit Quran/Hadith hawale) books par bhi laagu; (6) isi creator ka Gemini Spark wala reel hype tha — repo khud theek lagta hai (real docs, releases, SECURITY.md), lekin marketing par aankh band karke bharosa na karein.
   Saved: 18 Oct 2026 (husband ke Instagram reel se)
+
+---
+
+## 📞 AI Voice/Calling Agents (SaaS)
+
+- **OmniDimension** (commercial SaaS — free nahi; reseller program hai)
+  https://omnidim.io
+  AI voice calling agents ka platform — no-code builder, 30-50+ languages, sub-500ms latency, CRM/webhook integrations. **OmniRelay** white-label reseller program: apne domain/logo par AI agents becho, apni pricing khud rakho, farq tumhara margin.
+  Kaam: AI calling agent SaaS research ka **direct competitor** — un ka reseller model, pricing aur positioning samajhne ke liye.
+  Notes (imandari se): (1) ye **muft nahi** — plan fee + ~$0.15-0.24/min all-in kharcha; reel ka "bina banaye lakhs kamao" hype hai; (2) un ke apne blog ke mutabiq 2025 ki pricing tabdeeli se **resellers ke margins hurt hue**; (3) reel (Prateek Ai) comment-bait hai — "comment karo, link DM karunga" engagement farming; (4) khud ka SaaS banane vs reseller banne ka faisla research report ke baad karein.
+  Saved: 18 Oct 2026 (husband ke Facebook reel se — reel ka pitch decline, platform research ke liye save)
