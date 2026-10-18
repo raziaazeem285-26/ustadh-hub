@@ -53,6 +53,15 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
 
 ---
 
+- **n8n** (n8n-io, 207k+ stars, fair-code/Sustainable Use License — self-host free)
+  https://github.com/n8n-io/n8n
+  Self-hosted workflow automation (Zapier/Make ka free alternative) — 400+ integrations, visual builder + JS/Python code nodes, AI agent workflows (LangChain), Telegram/WhatsApp/Sheets/CRM sab connect hota hai. Community Edition me unlimited workflows aur executions.
+  Kaam: future me apne laptop/server par khud automation chalani ho (leads, reminders, auto-posting) — ya client work ke liye.
+  Notes (imandari se): (1) aap ki existing automation (blogs, social posts, video factory) pehle se mere scheduled jobs par chal rahi hai — filhal n8n ki zaroorat nahi; (2) setup technical hai — jab chahiye hoga Muse kar dega, aap ko kuch nahi karna parega; (3) license fair-code hai — khud istemal free, lekin isay service bana kar aagay bechna allowed nahi; (4) reel (The Digi Door) ka "₹0 AI office" claim hype hai aur "comment OFFICE" engagement bait — tool asal hai, pitch nahi.
+  Saved: 18 Oct 2026 (husband ke Facebook reel se — reel ka pitch decline, n8n tool research ke liye save)
+
+---
+
 ## 🔌 Free APIs
 
 - **public-apis** (public-apis, 489k+ stars, MIT)
