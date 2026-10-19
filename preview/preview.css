@@ -239,8 +239,10 @@ a{color:inherit}
 @media (min-width:1080px){
   .cards{grid-template-columns:repeat(4,1fr)}
 }
+.nav-close-x{display:none}
 @media (max-width:899px){
   .nav-toggle{display:block}
+  .nav-close-x{display:block}
   .main-nav{
     position:fixed;inset:0 0 0 auto;width:min(320px,84vw);flex-direction:column;align-items:stretch;
     background:var(--navy-800);padding:4.5rem 1.4rem 1.4rem;gap:.2rem;
