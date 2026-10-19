@@ -1,5 +1,24 @@
 [
-  {"slug":"virtue-of-gratitude-shukr","title":"The Virtue of Gratitude: How Shukr Brings More Blessings","excerpt":"Shukr — gratitude — is the secret of increasing blessings: the Quranic promise of 14:7, the Prophet's night prayers of thanks, and seven small daily habits.","date":"18 Oct, 2026","read_time":"6 min read","category":"Duas & Fazilat","category_slug":"duas-fazilat","url":"posts/virtue-of-gratitude-shukr.html"},
+  {
+    "slug": "virtue-of-patience-sabr",
+    "title": "The Virtue of Patience: How Sabr Turns Hardship into Reward",
+    "excerpt": "Sabr is the believer's greatest gift: the three forms of patience, the Quranic promise of 2:153, Prophet Ayyub's pain without complaint, and six practical ways to grow it.",
+    "date": "19 Oct, 2026",
+    "read_time": "6 min read",
+    "category": "Daily Life",
+    "category_slug": "daily-life",
+    "url": "posts/virtue-of-patience-sabr.html"
+  },
+  {
+    "slug": "virtue-of-gratitude-shukr",
+    "title": "The Virtue of Gratitude: How Shukr Brings More Blessings",
+    "excerpt": "Shukr — gratitude — is the secret of increasing blessings: the Quranic promise of 14:7, the Prophet's night prayers of thanks, and seven small daily habits.",
+    "date": "18 Oct, 2026",
+    "read_time": "6 min read",
+    "category": "Duas & Fazilat",
+    "category_slug": "duas-fazilat",
+    "url": "posts/virtue-of-gratitude-shukr.html"
+  },
   {
     "slug": "namaz-ki-fazilat-deen-ka-satoon",
     "title": "The Virtue of Salah: The Pillar of the Religion",
