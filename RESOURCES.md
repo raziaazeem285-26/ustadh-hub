@@ -58,6 +58,13 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Notes (imandari se): (1) sirf shipped backend **MLX = Mac Apple Silicon** — Windows/Linux (CUDA) abhi roadmap par hai, release NAHI; (2) preview status — production-ready nahi; (3) reel "comment LOCAL karo, DM me link bhejunga" wala engagement-bait tha — repo khud real aur verified hai, reel ka CTA ignore karein; (4) reel ne 2,100 stars kahe — asal me 5,800+ hain (purani info).
   Saved: 19 Oct 2026 (husband ke Facebook reel se — Hacker Computer School)
 
+- **cua** (trycua, 30k+ stars, MIT)
+  https://github.com/trycua/cua
+  "Computer-Use 2.0" — open-source drivers jo AI agent ko laptop par ASLI mouse/keyboard control dete hain (macOS, Windows, Linux), cross-OS sandboxes, driver SDK aur agent-performance benchmark.
+  Kaam: future — MUSE AGENT / JARVIS sirf sun-bol na kare, laptop par cheezein bhi kar sake (apps kholna, forms bharna); cloud desktop fleets par testing/eval.
+  Notes (imandari se): (1) developer tool hai — library/SDK, ready-made app nahi; code ka kaam Muse karega; (2) reel ka "no paywalls" dawa theek hai — MIT license, repo active (19 Oct 2026 ko pushed); (3) computer-use agents galti kar sakte hain — sensitive actions me hamesha human approval hona chahiye; (4) reel me link seedha caption me tha (DevPik), comment-bait nahi.
+  Saved: 20 Oct 2026 (husband ke Facebook reel se — DevPik)
+
 ---
 
 - **n8n** (n8n-io, 207k+ stars, fair-code/Sustainable Use License — self-host free)
