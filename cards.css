@@ -1,0 +1,48 @@
+/* Ustad Hub — new post-card styles extracted from the approved redesign.
+   Class names (.cards, .card, ...) do not exist in styles.css, so this file
+   is safe to load alongside it. Depends on design tokens; defines the few
+   that styles.css lacks, inherits the rest. */
+
+:root{
+  --navy-800:#0A1A33;
+  --gold-light:#E9CF7A;
+  --paper:#FFFFFF;
+}
+
+/* ---------- Post cards ---------- */
+.cards{display:grid;gap:1.3rem}
+.card{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:0 4px 14px rgba(6,15,34,.06);
+  display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease;
+  font-family:'Poppins',system-ui,sans-serif;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card-art{aspect-ratio:16/8;background:var(--navy-800)}
+.card-art svg{width:100%;height:100%}
+.card-body{padding:1.25rem 1.3rem 1.4rem;display:flex;flex-direction:column;gap:.55rem;flex:1}
+.card-body h3{font-size:1.08rem;line-height:1.45;font-weight:600}
+.card-body h3 a{color:var(--navy-800);text-decoration:none}
+.card-body h3 a:hover{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+.card .excerpt{font-size:.93rem;color:var(--muted);line-height:1.7;margin:0}
+.card-meta{display:flex;align-items:center;gap:.55rem;color:var(--muted);font-size:.8rem;margin-top:auto;padding-top:.5rem}
+.card-meta .dot{opacity:.5}
+
+/* Pills used inside cards */
+.pill-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:.9rem}
+.pill{
+  display:inline-flex;align-items:center;font-size:.74rem;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;
+  padding:.28rem .75rem;border-radius:999px;
+}
+.pill.cat{background:var(--navy-800);color:var(--gold-light)}
+.pill.time{background:var(--gold-soft);color:#7A5E14}
+.dot{opacity:.5}
+
+/* ---------- Breakpoints ---------- */
+@media (min-width:640px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:1080px){
+  .cards{grid-template-columns:repeat(4,1fr)}
+}
