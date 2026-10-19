@@ -60,6 +60,38 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Notes (imandari se): (1) aap ki existing automation (blogs, social posts, video factory) pehle se mere scheduled jobs par chal rahi hai — filhal n8n ki zaroorat nahi; (2) setup technical hai — jab chahiye hoga Muse kar dega, aap ko kuch nahi karna parega; (3) license fair-code hai — khud istemal free, lekin isay service bana kar aagay bechna allowed nahi; (4) reel (The Digi Door) ka "₹0 AI office" claim hype hai aur "comment OFFICE" engagement bait — tool asal hai, pitch nahi.
   Saved: 18 Oct 2026 (husband ke Facebook reel se — reel ka pitch decline, n8n tool research ke liye save)
 
+
+- **paperclip** (paperclipai, 104k+ stars, MIT)
+  https://github.com/paperclipai/paperclip
+  AI agents ki poori "company" chalao — CEO, CTO, engineers, designers jaise roles do, har agent ko monthly budget do (budget khatam = agent ruk jata hai). Cost control, multi-org, mobile ready.
+  Kaam: future me laptop par multi-agent setup ho to team ki tarah manage karna.
+  Saved: 19 Oct 2026
+
+- **ecc** (affaan-m, 283k+ stars, MIT)
+  https://github.com/affaan-m/ecc
+  "Everything Claude Code" — ek command me 261 skills + 64 specialist agents + 84 commands install. Claude Code ek assistant se poori AI dev team ban jata hai (developer, tester, debugger, researcher).
+  Note: Claude Code chahiye; laptop par AionUi/OpenClaw setup ke baad kaam ayega.
+  Saved: 19 Oct 2026
+
+- **livekit** (livekit, 21.6k+ stars, Apache-2.0)
+  https://github.com/livekit/livekit
+  Real-time voice/video AI ka open-source stack (WebRTC) — AI voice agents ke liye low-latency (~0.5 sec). Agencies $15k-60k leti hain, ye free hai.
+  Kaam: future me academy ke liye AI voice agent (calls auto-answer) banana ho to.
+  Note: technical hai; free LiveKit Cloud tier bhi hai.
+  Saved: 19 Oct 2026
+
+- **pipecat** (pipecat-ai, 16.5k+ stars, BSD-2-Clause)
+  https://github.com/pipecat-ai/pipecat
+  Real-time voice + multimodal AI agents ka Python framework — speech-to-text, LLM, text-to-speech ko pipeline me jorta hai. Twilio/WhatsApp transports bhi supported.
+  Kaam: AI voice-calling agent project ke liye (free, open-source).
+  Saved: 19 Oct 2026
+
+- **n8n-workflow-templates** (Danitilahun, 724 stars)
+  https://github.com/Danitilahun/n8n-workflow-templates
+  2,053 ready-to-use n8n automation workflows (Gmail, Telegram, social media, CRM...) — download karke n8n me import karo.
+  Note: filhal nahi chahiye (automation Muse ke scheduled jobs par chal rahi hai); n8n lagane ka faisla ho to kaam ayega.
+  Saved: 19 Oct 2026
+
 ---
 
 ## 🔌 Free APIs
@@ -155,3 +187,23 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Kaam: AI calling agent SaaS research ka **direct competitor** — un ka reseller model, pricing aur positioning samajhne ke liye.
   Notes (imandari se): (1) ye **muft nahi** — plan fee + ~$0.15-0.24/min all-in kharcha; reel ka "bina banaye lakhs kamao" hype hai; (2) un ke apne blog ke mutabiq 2025 ki pricing tabdeeli se **resellers ke margins hurt hue**; (3) reel (Prateek Ai) comment-bait hai — "comment karo, link DM karunga" engagement farming; (4) khud ka SaaS banane vs reseller banne ka faisla research report ke baad karein.
   Saved: 18 Oct 2026 (husband ke Facebook reel se — reel ka pitch decline, platform research ke liye save)
+
+---
+
+## 🎬 AI Video
+
+- **OpenMontage** (calesthio, 69.6k+ stars)
+  https://github.com/calesthio/OpenMontage
+  Open-source "agentic" video production system — script, storyboard, footage, visuals, voiceover, editing, rendering sab AI kare. 12 production pipelines, 700+ agent skills.
+  Kaam: YouTube automation research ke liye sab se relevant. Comments me warning thi ke free version ka result average ho sakta hai — pehle test karna.
+  Saved: 19 Oct 2026
+
+---
+
+## 🖥️ Self-Hosted Apps
+
+- **awesome-selfhosted** (awesome-selfhosted, 328k+ stars)
+  https://github.com/awesome-selfhosted/awesome-selfhosted
+  Free self-hostable apps ki bari list — analytics, automation, backup, media streaming, databases... apne server par host karo, koi subscription nahi.
+  Kaam: future me apne tools khud host karne hon to directory ke taur par.
+  Saved: 19 Oct 2026
