@@ -51,6 +51,13 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Note: YouTube/web/RSS bilkul free, koi setup nahi; Twitter/Reddit/FB/IG ke liye apne browser login se chalta hai (apne account ki safety ke liye chhota alag account behtar).
   Saved: 15 Oct 2026
 
+- **Edge0** (Edge0-AI, Apache-2.0, 5.8k+ stars)
+  https://github.com/Edge0-AI/Edge0
+  Streaming MoE inference framework — 35B-parameter model ko ~2.5–3GB RAM me chalata hai (SSD se expert weights stream karke, routing predictor ke saath), bina expensive GPU ke. Edge0-35B-A3B aur 8B checkpoints bhi open hain.
+  Kaam: future — agar kabhi local AI laptop par chahiye to is par nazar rahe; abhi ke kaam (content factory, VoicePilot) me cloud APIs hi use ho rahi hain.
+  Notes (imandari se): (1) sirf shipped backend **MLX = Mac Apple Silicon** — Windows/Linux (CUDA) abhi roadmap par hai, release NAHI; (2) preview status — production-ready nahi; (3) reel "comment LOCAL karo, DM me link bhejunga" wala engagement-bait tha — repo khud real aur verified hai, reel ka CTA ignore karein; (4) reel ne 2,100 stars kahe — asal me 5,800+ hain (purani info).
+  Saved: 19 Oct 2026 (husband ke Facebook reel se — Hacker Computer School)
+
 ---
 
 - **n8n** (n8n-io, 207k+ stars, fair-code/Sustainable Use License — self-host free)
@@ -158,6 +165,20 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Saved: 16 Oct 2026 (Razia ki request par — "yes add karden")
 
 ## 🎨 Web Design
+
+- **threeui.com** (gallery — free dekhne ke liye; kuch templates paid)
+  https://threeui.com
+  Three.js interactive components, templates aur shaders ki dark-themed gallery — authored templates (KAGE, RASTER RUN waghera), AI coding agents ke liye copy karne wale prompts ke saath.
+  Kaam: future website builds/redesigns me premium interactive sections ke liye design reference aur copyable components.
+  Notes (imandari se): (1) copy karne par license/terms check karein; (2) Muse khud pages banata hai — ye sirf design inspiration/reference ke liye hai.
+  Saved: 19 Oct 2026 (husband ke Facebook reel se — Codvyn)
+
+- **taste-skill** (Leonxlnx, MIT, 90k+ stars)
+  https://github.com/Leonxlnx/taste-skill
+  "Anti-slop" frontend design skill — SKILL.md files jo AI coding agents (Cursor, Claude Code, Codex, Gemini CLI) ko typography, spacing, color, layout aur motion ke sakht rules dete hain taake pages generic AI-look ke na lagein. Default: `design-taste-frontend` (v2); plus variants (redesign, soft, minimalist, brutalist, image-to-code).
+  Kaam: Muse ne `design-taste-frontend` v2 install kar liya hai apne custom-skills me (`~/workspace/custom-skills/taste-skill-design/`) — future website builds me behtar art direction ke liye.
+  Notes (imandari se): (1) skill khud code nahi likhti — design direction/rules deti hai, implement agent karta hai; (2) un ke sites ka brand (purple academy, golden/navy blog) manual decide rahega, skill sirf "generic na lage" ke liye.
+  Saved: 19 Oct 2026 (husband ke Facebook reel se — Codvyn)
 
 - **freebies** (uisual, 465 stars, free for commercial use — no credit needed)
   https://github.com/uisual/freebies
