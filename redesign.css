@@ -530,3 +530,299 @@ a{color:inherit}
 .urdu{font-family:"Noto Nastaliq Urdu","Amiri",serif;direction:rtl;text-align:right;line-height:2.3}
 .urdu-lead{font-family:"Noto Nastaliq Urdu",serif;direction:rtl;text-align:center;line-height:2.4;font-size:19px}
 .ar-callig{font-family:"Amiri",serif;direction:rtl;font-size:1.35em;letter-spacing:0}
+
+/* ============================================================
+   BLOG THEME v2 — Gradient dark blue + golden (Oct 2026)
+   Base: #060F22 → #0A1A33 → #12305E → #0D2244 | Gold: #D4AF37 / #F5D67B
+   Homepage = full dark theme (scoped under body.home).
+   Articles keep their light reading theme; only the new
+   figure.article-hero + sidebar accent refinements apply there.
+   ============================================================ */
+:root{
+  --navy-950:#050B1A;
+  --navy-700:#12305E;
+  --navy-600:#1B4478;
+  --gold-hi:#F5D67B;
+  --ink-on-dark:#EDE6D2;
+  --ink-dim:rgba(237,230,210,.72);
+  --glass-bg:rgba(255,255,255,.055);
+  --glass-border:rgba(212,175,55,.32);
+  --glass-shadow:0 18px 44px rgba(0,0,0,.38);
+}
+
+/* ---------- Homepage dark canvas ---------- */
+body.home{
+  background:
+    radial-gradient(1100px 520px at 85% -6%, rgba(27,68,120,.55), transparent 60%),
+    radial-gradient(900px 480px at 8% 12%, rgba(18,48,94,.5), transparent 60%),
+    linear-gradient(180deg, #0A1A33 0%, #0D2244 42%, #060F22 100%);
+  background-attachment:fixed;
+  color:var(--ink-on-dark);
+}
+body.home .section-head h2{color:#fff}
+body.home .section-head .kicker{color:var(--gold-hi)}
+body.home .section-head a.more{color:var(--gold-hi)}
+
+/* ---------- Hero ---------- */
+.home-hero{
+  position:relative;overflow:hidden;
+  background:
+    linear-gradient(180deg, rgba(6,15,34,.62) 0%, rgba(10,26,51,.55) 45%, #0A1A33 100%),
+    url("https://images.unsplash.com/photo-1512632578888-169bbbc64f33?q=80&w=1600&auto=format&fit=crop") center 38%/cover no-repeat;
+  border-bottom:1px solid rgba(212,175,55,.35);
+}
+.hero-in{padding:4.6rem 0 4rem;max-width:720px}
+.hero-in .kicker{display:block;font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-hi);margin-bottom:.9rem}
+.hero-in h1{font-size:clamp(2rem,5.4vw,3.2rem);line-height:1.18;font-weight:700;color:#fff;margin:0 0 1rem;text-shadow:0 2px 22px rgba(0,0,0,.5)}
+.hero-in h1 .gold{color:var(--gold-hi)}
+.hero-in p{font-size:1.06rem;line-height:1.75;color:rgba(255,255,255,.82);max-width:60ch;margin:0 0 1.7rem}
+.hero-cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn.ghost-light{border:2px solid rgba(245,214,123,.75);color:var(--gold-hi);margin-left:.6rem}
+.btn.ghost-light:hover{background:rgba(245,214,123,.14);color:#fff}
+
+/* ---------- Glass featured card ---------- */
+.featured.glass{
+  background:var(--glass-bg);
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  border:1px solid var(--glass-border);
+  box-shadow:var(--glass-shadow);
+}
+.featured.glass .featured-body h2 a{color:#fff}
+.featured.glass .excerpt{color:var(--ink-dim)}
+.featured.glass .byline{color:var(--ink-dim)}
+.featured.glass .byline strong{color:#fff}
+.featured-art img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* ---------- Homepage layout with sidebar ---------- */
+.home-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem;align-items:start}
+@media(min-width:1024px){
+  .home-layout{grid-template-columns:minmax(0,1fr) 330px;gap:2.2rem}
+  body.home .sidebar{position:sticky;top:96px}
+}
+@media(min-width:640px){
+  body.home .cards{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:1080px){
+  body.home .cards{grid-template-columns:repeat(2,1fr)} /* sidebar occupies the 3rd slot */
+}
+
+/* ---------- Glass post cards ---------- */
+.cards .card, .blog-grid .card{
+  position:relative;
+  background:var(--glass-bg);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border:1px solid var(--glass-border);
+  box-shadow:var(--glass-shadow);
+}
+body.home .card-body h3 a{color:#fff}
+body.home .card-body .excerpt{color:var(--ink-dim)}
+body.home .card-meta{color:rgba(212,175,55,.85)}
+body.home .pill.time{background:rgba(212,175,55,.16);color:var(--gold-hi)}
+.card:hover, .blog-grid .card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 22px 50px rgba(0,0,0,.45), 0 0 0 1px rgba(212,175,55,.45), 0 0 34px rgba(212,175,55,.22);
+}
+.card-art img{width:100%;height:100%;object-fit:cover;display:block}
+.card-art{aspect-ratio:16/8;overflow:hidden}
+/* whole-card click (stretched link) */
+.card h3 a.stretched::after{content:"";position:absolute;inset:0;border-radius:var(--radius)}
+
+/* ---------- Homepage sidebar widgets (dark glass) ---------- */
+body.home .widget{
+  background:var(--glass-bg);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border:1px solid var(--glass-border);
+  box-shadow:var(--glass-shadow);
+}
+body.home .widget-title{color:var(--gold-hi);border-bottom-color:rgba(212,175,55,.35)}
+body.home .search-wrap input[type=search]{background:rgba(255,255,255,.07);border-color:rgba(212,175,55,.35);color:#fff}
+body.home .search-wrap input[type=search]::placeholder{color:rgba(255,255,255,.45)}
+body.home .search-results{background:#0E2242;border-color:rgba(212,175,55,.4)}
+body.home .search-results a span{color:#fff}
+body.home .search-results a{border-bottom-color:rgba(212,175,55,.18)}
+body.home .search-results a:hover{background:rgba(212,175,55,.12)}
+body.home .pop-title{color:#fff}
+body.home .pop-meta{color:rgba(212,175,55,.75)}
+body.home .pop-item{border-bottom-color:rgba(212,175,55,.16)}
+body.home .cat-row{color:var(--ink-on-dark);border-bottom-color:rgba(212,175,55,.16)}
+body.home .cat-count{background:rgba(212,175,55,.18);color:var(--gold-hi)}
+.about-mini{display:flex;gap:.9rem;align-items:flex-start}
+.about-mini .avatar{width:52px;height:52px;flex:none;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:1.2rem;color:#0A1A33;background:linear-gradient(135deg,var(--gold-hi),#B8912A);border:2px solid rgba(212,175,55,.6)}
+.about-mini h3{color:#fff;font-size:1.02rem;margin:0 0 .3rem}
+.about-mini p{font-size:.88rem;line-height:1.65;color:var(--ink-dim);margin:0 0 .7rem}
+.about-mini a{color:var(--gold-hi);font-size:.88rem;font-weight:600;text-decoration:none}
+.follow-widget .f-row{display:flex;gap:.55rem;flex-wrap:wrap}
+.follow-widget a{display:inline-flex;align-items:center;gap:.45rem;text-decoration:none;font-size:.86rem;font-weight:500;color:var(--ink-on-dark);background:rgba(255,255,255,.06);border:1px solid rgba(212,175,55,.3);border-radius:10px;padding:.5rem .8rem}
+.follow-widget a:hover{border-color:var(--gold);background:rgba(212,175,55,.12)}
+.follow-widget svg{width:17px;height:17px;fill:var(--gold-hi)}
+
+/* ---------- Category tiles / promos / social on dark home ---------- */
+body.home .cat-tile{background:var(--glass-bg);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid var(--glass-border)}
+body.home .cat-tile:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(0,0,0,.4),0 0 26px rgba(212,175,55,.18)}
+body.home .cat-tile b{color:#fff}
+body.home .cat-tile small{color:var(--ink-dim)}
+body.home .social-card{background:var(--glass-bg);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid var(--glass-border)}
+body.home .social-card:hover{box-shadow:0 14px 32px rgba(0,0,0,.4),0 0 24px rgba(212,175,55,.16)}
+body.home .social-card svg{fill:var(--gold-hi)}
+body.home .social-card b{color:#fff}
+body.home .social-card small{color:var(--ink-dim)}
+body.home .news-card{
+  background:var(--glass-bg);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  border:1px solid var(--glass-border);box-shadow:var(--glass-shadow);
+}
+body.home .news-form input{background:rgba(255,255,255,.07);border-color:rgba(212,175,55,.4)}
+body.home .promo.navy{background:linear-gradient(135deg,#0E2242,#060F22);border:1px solid var(--glass-border)}
+
+/* ---------- Article hero figure (overrides dead legacy rules) ---------- */
+figure.article-hero{
+  background:none;padding:0;margin:0 0 1.7rem;position:static;overflow:hidden;
+  border-radius:14px;border:1px solid rgba(212,175,55,.4);
+  box-shadow:0 12px 32px rgba(6,15,34,.16);
+}
+figure.article-hero img{width:100%;aspect-ratio:16/8;object-fit:cover;display:block}
+figure.article-hero figcaption{font-size:.8rem;color:#8a6d1f;background:#FDF9EE;padding:.5rem 1rem}
+
+/* ---------- Light-glass cards for blog + category pages (light theme) ---------- */
+.blog-grid .card{
+  background:rgba(255,255,255,.72);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border:1px solid rgba(212,175,55,.4);
+  box-shadow:0 10px 28px rgba(6,15,34,.08);
+}
+.blog-grid .card:hover{
+  box-shadow:0 18px 42px rgba(6,15,34,.14),0 0 30px rgba(212,175,55,.28);
+}
+.cat-hero{
+  position:relative;overflow:hidden;color:#fff;border-bottom:1px solid rgba(212,175,55,.35);
+  background:linear-gradient(120deg,rgba(6,15,34,.94),rgba(18,48,94,.82)),#0A1A33;
+  padding:2.6rem 0;
+}
+.cat-hero .kicker{color:var(--gold-hi)}
+.cat-hero h1{color:#fff}
+.cat-hero p{color:rgba(255,255,255,.78)}
+
+/* ---------- Scroll reveal ---------- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s var(--ease,cubic-bezier(.22,.61,.36,1))}
+.reveal.inview{opacity:1;transform:none}
+.reveal[data-delay="1"]{transition-delay:.08s}
+.reveal[data-delay="2"]{transition-delay:.16s}
+.reveal[data-delay="3"]{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+}
+
+/* ============================================================
+   BLOG THEME v2.1 — full-site dark blue + golden (Oct 2026)
+   Fixes: figure.article-hero::before page-wide pattern leak (the
+   legacy ::before with inset:0 had no positioned ancestor once the
+   figure became position:static, so it painted the whole viewport);
+   bulletproof scroll-reveal (visible by default, JS adds .pre first);
+   dark theme for article / blog / category pages; no page patterns.
+   ============================================================ */
+
+/* --- kill the legacy pattern leaks --- */
+figure.article-hero::before{content:none!important;display:none!important}
+.ar-quote::before{background-image:none!important}
+
+/* --- scroll reveal: visible by default, hidden only when JS opts in --- */
+.reveal{opacity:1;transform:none;transition:opacity .65s ease,transform .65s var(--ease,cubic-bezier(.22,.61,.36,1))}
+.reveal.pre{opacity:0;transform:translateY(24px)}
+.reveal.pre.inview{opacity:1;transform:none}
+.reveal.pre[data-delay="1"]{transition-delay:.08s}
+.reveal.pre[data-delay="2"]{transition-delay:.16s}
+.reveal.pre[data-delay="3"]{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){
+  .reveal,.reveal.pre{opacity:1;transform:none;transition:none}
+}
+
+/* --- full-site dark canvas (all pages loading this stylesheet) --- */
+body{
+  background:
+    radial-gradient(1100px 520px at 85% -6%, rgba(27,68,120,.55), transparent 60%),
+    radial-gradient(900px 480px at 8% 12%, rgba(18,48,94,.5), transparent 60%),
+    linear-gradient(180deg, #0A1A33 0%, #0D2244 42%, #060F22 100%);
+  background-attachment:fixed;
+  color:var(--ink-on-dark);
+}
+
+/* --- article pages: dark reading theme --- */
+.crumbs{color:rgba(237,230,210,.6)}
+.crumbs a{color:rgba(237,230,210,.78)}
+.crumbs a:hover{color:var(--gold-hi)}
+.pill-cat{background:rgba(212,175,55,.18);color:var(--gold-hi)}
+.pill-time{background:rgba(255,255,255,.09);color:rgba(237,230,210,.8)}
+.article-title{color:#fff}
+.byline{color:rgba(237,230,210,.65)}
+.byline strong{color:#fff}
+.toc-card{background:var(--glass-bg);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border:1px solid var(--glass-border);border-left:4px solid var(--gold)}
+.toc-card strong{color:var(--gold-hi)}
+.toc-card ol{color:var(--ink-on-dark)}
+.toc-card a{color:var(--ink-on-dark)}
+.toc-card a:hover{color:var(--gold-hi)}
+.article-body{color:var(--ink-on-dark)}
+.article-body .lead{color:rgba(237,230,210,.88)}
+.article-body .kicker{color:var(--gold-hi)}
+.article-body h2{color:#fff}
+.article-body h3{color:#fff}
+.article-body blockquote{background:rgba(212,175,55,.1);color:rgba(237,230,210,.88)}
+.article-body a{color:var(--gold-hi)}
+.article-body a:hover{color:#fff}
+.article-body strong{color:#fff}
+.share-row{background:var(--glass-bg);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border:1px solid var(--glass-border)}
+.share-label{color:#fff}
+.share-btn{border-color:rgba(212,175,55,.35);background:rgba(255,255,255,.06);color:var(--ink-on-dark)}
+.share-btn:hover{border-color:var(--gold-hi);background:rgba(212,175,55,.14)}
+.related-title{color:#fff}
+.rel-card{background:var(--glass-bg);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border:1px solid var(--glass-border)}
+.rel-card:hover{box-shadow:0 12px 28px rgba(0,0,0,.45),0 0 24px rgba(212,175,55,.16)}
+.rel-cat{color:var(--gold-hi)}
+.rel-name{color:#fff}
+.rel-meta{color:rgba(237,230,210,.6)}
+
+/* --- sidebar widgets: dark glass on every page --- */
+.widget{background:var(--glass-bg);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border:1px solid var(--glass-border);box-shadow:var(--glass-shadow)}
+.widget-title{color:var(--gold-hi);border-bottom-color:rgba(212,175,55,.35)}
+.search-wrap input[type=search]{background:rgba(255,255,255,.07);border-color:rgba(212,175,55,.35);color:#fff}
+.search-wrap input[type=search]::placeholder{color:rgba(255,255,255,.45)}
+.search-results{background:#0E2242;border-color:rgba(212,175,55,.4)}
+.search-results a{border-bottom-color:rgba(212,175,55,.18)}
+.search-results a span{color:#fff}
+.search-results a:hover{background:rgba(212,175,55,.12)}
+.pop-title{color:#fff}
+.pop-meta{color:rgba(212,175,55,.75)}
+.pop-item{border-bottom-color:rgba(212,175,55,.16)}
+.cat-row{color:var(--ink-on-dark);border-bottom-color:rgba(212,175,55,.16)}
+.cat-count{background:rgba(212,175,55,.18);color:var(--gold-hi)}
+
+/* --- blog + category listing pages: dark glass cards --- */
+.blog-grid .card{background:var(--glass-bg);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border:1px solid var(--glass-border);box-shadow:var(--glass-shadow)}
+.blog-grid .card:hover{transform:translateY(-5px);
+  box-shadow:0 22px 50px rgba(0,0,0,.45),0 0 0 1px rgba(212,175,55,.45),0 0 34px rgba(212,175,55,.22)}
+.blog-grid .card-body h3 a{color:#fff}
+.blog-grid .card-body .excerpt{color:var(--ink-dim)}
+.blog-grid .card-meta{color:rgba(212,175,55,.85)}
+.blog-grid .pill.cat{background:rgba(212,175,55,.18);color:var(--gold-hi)}
+.blog-grid .pill.time{background:rgba(212,175,55,.14);color:var(--gold-hi)}
+.blog-hero h1{color:#fff}
+.blog-hero .kicker{color:var(--gold-hi)}
+.blog-hero p{color:rgba(255,255,255,.8)}
+.search-box input{background:rgba(255,255,255,.07);border:1px solid rgba(212,175,55,.35);color:#fff}
+.search-box input::placeholder{color:rgba(255,255,255,.45)}
+.search-box svg{stroke:var(--gold-hi)}
+.search-meta{color:rgba(237,230,210,.65)}
+.search-meta strong{color:var(--gold-hi)}
+.no-hit{color:rgba(237,230,210,.7)}
+
+/* --- v2.1 final fixes: hero pattern, trial-widget contrast, dark search --- */
+.blog-hero::before{background-image:none!important}
+.widget-trial h3{color:var(--gold-hi)}
+.widget-trial p{color:var(--ink-dim)}
+.blog-listing .search-box{background:rgba(10,26,51,.55);border:1px solid rgba(212,175,55,.35)}
+.blog-listing .search-box input[type=search]{background:transparent;border:0;color:#fff;box-shadow:none}
+.blog-listing .search-box input[type=search]::placeholder{color:rgba(255,255,255,.45)}
+.blog-listing .search-clear{color:rgba(237,230,210,.65)}

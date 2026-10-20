@@ -206,7 +206,7 @@
     var grid = document.querySelector(".blog-grid");
     var meta = document.getElementById("searchMeta");
     var clearBtn = document.getElementById("searchClear");
-    var cards = grid ? Array.prototype.slice.call(grid.querySelectorAll(".post-card")) : [];
+    var cards = grid ? Array.prototype.slice.call(grid.querySelectorAll(".card")) : [];
     var noRes = document.createElement("div");
     noRes.className = "no-results";
     noRes.innerHTML = '<span class="big">🔍</span><h3>Nothing found</h3><p>Try different words — e.g. "dua", "quran", "sabr".</p>';
@@ -249,8 +249,11 @@
       rel.forEach(function (p, i) {
         var href = p.url.indexOf("posts/") === 0 ? "../" + p.url : p.url;
         var catHref = "../categories/" + p.category_slug + ".html";
+        var art = p.image
+          ? "<div class=\"card-art\"><img src=\"" + p.image + "\" alt=\"" + p.title.replace(/"/g, "") + "\" loading=\"lazy\"></div>"
+          : "<a class=\"post-band\" href=\"" + catHref + "\"><span>" + p.category + "</span></a>";
         html += "<article class=\"post-card\" style=\"--d:" + (i * 0.09) + "s\">" +
-          "<a class=\"post-band\" href=\"" + catHref + "\"><span>" + p.category + "</span></a>" +
+          art +
           "<div class=\"post-body\"><div class=\"post-meta\">" + p.date + " · " + p.read_time + "</div>" +
           "<h3><a href=\"" + href + "\">" + p.title + "</a></h3><p>" + p.excerpt + "</p>" +
           "<a class=\"read-more\" href=\"" + href + "\">Read article</a></div></article>";

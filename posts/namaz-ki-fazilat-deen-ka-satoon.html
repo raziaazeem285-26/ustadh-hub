@@ -12,11 +12,11 @@
 <meta property="og:description" content="Salah is the pillar of the religion. Five daily prayers erase sins, guard from evil, and are the first deed judged on the Day of Judgment.">
 <meta property="og:url" content="https://ustadh-hub.vercel.app/posts/namaz-ki-fazilat-deen-ka-satoon.html">
 <meta property="og:site_name" content="Razia Azeem Official">
-<meta property="og:image" content="https://ustadh-hub.vercel.app/og-image.svg">
+<meta property="og:image" content="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=1200&auto=format&fit=crop">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Virtue of Salah | Razia Azeem">
 <meta name="twitter:description" content="Salah is the pillar of the religion. Five daily prayers erase sins, guard from evil, and are the first deed judged on the Day of Judgment.">
-<meta name="twitter:image" content="https://ustadh-hub.vercel.app/og-image.svg">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=1200&auto=format&fit=crop">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
@@ -103,6 +103,9 @@
   <div class="article-layout">
     <article class="article-col">
       <div class="pills"><span class="pill pill-cat">Duas &amp; Fazilat</span><span class="pill pill-time">6 min read</span></div>
+            <figure class="article-hero">
+        <img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=1200&auto=format&fit=crop" alt="The Virtue of Salah: The Pillar of the Religion" loading="lazy">
+      </figure>
       <h1 class="article-title">The Virtue of Salah: The Pillar of the Religion</h1>
       <div class="byline">
         <span class="byline-avatar" aria-hidden="true">R</span>
@@ -392,6 +395,16 @@
     }).join('');
   }).catch(function(){document.getElementById('popPosts').innerHTML='<span class="no-hit">Unable to load posts.</span>';});
 })();
+</script>
+
+<script>
+(function(){var els=document.querySelectorAll('.reveal');if(!els.length)return;
+function showAll(){els.forEach(function(el){el.classList.add('inview');});}
+if('IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('inview');io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -6% 0px'});
+els.forEach(function(el){el.classList.add('pre');io.observe(el);});
+}else{els.forEach(function(el){el.classList.add('pre');});showAll();}
+setTimeout(showAll,2500);})();
 </script>
 </body>
 </html>
