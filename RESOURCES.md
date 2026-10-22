@@ -171,6 +171,13 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Notes (imandari se): (1) Tortoise **bohat slow** hai — ye us ki mashhoor kamzori hai; (2) quality ke liye audio samples sun kar faisla karein (samples: https://ahmedhanzala.github.io/urdu-tts/); (3) voiceover filhal paused tha — Razia ne khud restart karne ko kaha (16 Oct 2026).
   Saved: 16 Oct 2026 (Razia ki request par — "yes add karden")
 
+- **VoiceStudio** (debpalash, 81.6k+ stars, AGPL-3.0)
+  https://github.com/debpalash/VoiceStudio
+  Mukammal local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription, audiobooks. **Urdu shamil hai** — isiliye 14 Oct 2026 ko ye Razia ki Urdu voiceover recommendation bani thi (free, unlimited, sirf us ke apne laptop par).
+  Install: 2 tareeqay — (A) laptop ke coding agent ko official prompt paste karo (agent guide: docs/install/agent.md — model download se pehle size+license bata kar ijazat mangta hai, analytics consent user ke liye chhorta hai); (B) seedha `VoiceStudio-Electron-*-win-x64.exe` releases se (admin nahi chahiye). **Tauri khatam — ab sirf Electron app hai.** Windows: bina NVIDIA GPU ~5 GiB disk (CPU build khud lag jata hai), GPU ke saath ~10 GB. Tayyar research pack: ~/workspace/voicestudio/INSTALL-PACK.md.
+  Notes (imandari se): (1) pehli koshish me us ke laptop par download cancel hua tha — retry anytime, install usi ke laptop par hoga; (2) GPU na ho to generation slow hogi lekin kaam karega; (3) MUSE AGENT me is ka voice path pehle se hai (silent fallback ke saath).
+  Saved: 23 Oct 2026 (husband ke Facebook reel se dobara surface hua — aiwithdivyam; husband ke kehne par agent-install research karke save kiya)
+
 ## 🎨 Web Design
 
 - **threeui.com** (gallery — free dekhne ke liye; kuch templates paid)
