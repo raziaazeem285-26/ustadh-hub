@@ -65,6 +65,14 @@ Kaam ki cheezen jo future projects me kaam ayengi. Jab koi nayi useful repo/link
   Notes (imandari se): (1) developer tool hai — library/SDK, ready-made app nahi; code ka kaam Muse karega; (2) reel ka "no paywalls" dawa theek hai — MIT license, repo active (19 Oct 2026 ko pushed); (3) computer-use agents galti kar sakte hain — sensitive actions me hamesha human approval hona chahiye; (4) reel me link seedha caption me tha (DevPik), comment-bait nahi.
   Saved: 20 Oct 2026 (husband ke Facebook reel se — DevPik)
 
+- **colibri** (JustVugg, 47k+ stars, Apache-2.0)
+  https://github.com/JustVugg/colibri
+  Pure-C inference engine jo bohat bare MoE models aam laptop par chalata hai — garam experts GPU (CUDA/Vulkan) me, darmiyane RAM me, thande NVMe SSD se stream hote hain. **GPU zaroori nahi.** 13 engines: GLM-5.2 (744B MoE, int4), Kimi K3, DeepSeek V4 Flash, Qwen3.6/Coder, Muse Spark Open, Qwen-Image waghera. Windows/Linux/macOS teeno par chalta hai; installer khud machine dekh kar fit model recommend karta hai.
+  Kaam: MUSE AGENT / JARVIS ka local dimagh — bina GPU wale laptop par frontier-class model local chal sake to API par dependency khatam; Edge0 isi khayal ka Mac-only preview tha, ye us ka cross-platform bara bhai hai.
+  Requirements (official): kam az kam 8 GB RAM (16+ behtar), sab se chhote model ke liye 22 GB khali disk.
+  Notes (imandari se): (1) ye sirf engine hai — assistant/agent layer upar banana parega (wohi jo MUSE AGENT me ban raha hai); reel ka "your next Jarvis" is had tak theek hai; (2) CPU streaming par speed SSD/RAM par munhasir hai — Flash-class models chat ke liye theek, 744B wala sabr mange ga; (3) model downloads bare hain (dasion GB) — install us ke apne laptop par hoga.
+  Saved: 4 Nov 2026 (husband ke Facebook reel se — Beyond Tahir)
+
 ---
 
 - **n8n** (n8n-io, 207k+ stars, fair-code/Sustainable Use License — self-host free)
