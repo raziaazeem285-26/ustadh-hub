@@ -328,7 +328,7 @@
   });
   // Sidebar: build index, popular posts and category counts from /posts.json at runtime
   function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-  var CATdua-of-prophet-yunus={"Duas & Fazilat":"duas-fazilat","Quran":"quran","Hadith":"hadith","Seerah & Stories":"seerah-stories","Daily Life":"daily-life"};
+  var CATSLUG={"Duas & Fazilat":"duas-fazilat","Quran":"quran","Hadith":"hadith","Seerah & Stories":"seerah-stories","Daily Life":"daily-life"};
   var CATOR=["Duas & Fazilat","Quran","Hadith","Seerah & Stories","Daily Life"];
   var POSTS=[];
   fetch('/posts.json').then(function(r){return r.json();}).then(function(d){
@@ -342,7 +342,7 @@
     POSTS.forEach(function(p){counts[p.c]=(counts[p.c]||0)+1;});
     var cc=document.getElementById('catCounts');
     cc.innerHTML=CATOR.filter(function(c){return counts[c];}).map(function(c){
-      return '<a class="cat-row" href="/categories/'+CATdua-of-prophet-yunus[c]+'.html"><span>'+esc(c)+'</span><span class="cat-count">'+counts[c]+'</span></a>';
+      return '<a class="cat-row" href="/categories/'+CATSLUG[c]+'.html"><span>'+esc(c)+'</span><span class="cat-count">'+counts[c]+'</span></a>';
     }).join('');
   }).catch(function(){
     var pl=document.getElementById('popList');
