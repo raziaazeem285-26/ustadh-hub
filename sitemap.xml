@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ustadh-hub.vercel.app/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ustadh-hub.vercel.app/blog.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -615,6 +615,30 @@
   <url>
     <loc>https://ustadh-hub.vercel.app/posts/sunnah-manners-of-eating.html</loc>
     <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ustadh-hub.vercel.app/posts/prophet-kindness-to-children.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ustadh-hub.vercel.app/posts/yt-zcifi-eefce.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ustadh-hub.vercel.app/posts/yt-d1veqinmxsa.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ustadh-hub.vercel.app/posts/yt-oprqw_zgveq.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
