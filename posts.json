@@ -1,5 +1,49 @@
 [
  {
+  "slug": "hijrah-journey-from-makkah-to-madinah",
+  "title": "The Hijrah: A Journey That Changed History",
+  "excerpt": "Two men, two camels, and a journey of 400 kilometres that changed history. The Hijrah was not an escape — it was a plan, a trust, and a new beginning.",
+  "date": "13 Nov, 2026",
+  "read_time": "8 min read",
+  "category": "Seerah & Stories",
+  "category_slug": "seerah-stories",
+  "url": "posts/hijrah-journey-from-makkah-to-madinah.html",
+  "image": "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?q=80&w=1200&auto=format&fit=crop"
+ },
+ {
+  "slug": "zakat-charity-purifies-your-wealth",
+  "title": "Zakat: The Charity That Purifies Wealth",
+  "excerpt": "Zakat is not a tax on your wealth — it is the purification of it. The third pillar of Islam, 2.5% given once a year, from the wealthy to the poor.",
+  "date": "13 Nov, 2026",
+  "read_time": "8 min read",
+  "category": "Daily Life",
+  "category_slug": "daily-life",
+  "url": "posts/zakat-charity-purifies-your-wealth.html",
+  "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1200&auto=format&fit=crop"
+ },
+ {
+  "slug": "yt-vnzohxxsru8",
+  "title": "Wudu Benefits | Every Sin Falls Away With the Water | Islamic Reminder #Shorts",
+  "excerpt": "Wudu Benefits | Every Sin Falls Away With the Water | Islamic Reminder #Shorts",
+  "date": "13 Nov, 2026",
+  "read_time": "2 min read",
+  "category": "Videos",
+  "category_slug": "videos",
+  "url": "posts/yt-vnzohxxsru8.html",
+  "image": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1200&auto=format&fit=crop"
+ },
+ {
+  "slug": "yt-fhbncxmtuye",
+  "title": "Shukr Ki Fazilat | If You Are Grateful, Allah Will Give You More | Islamic Reminder #Shorts",
+  "excerpt": "Shukr Ki Fazilat | If You Are Grateful, Allah Will Give You More | Islamic Reminder #Shorts",
+  "date": "13 Nov, 2026",
+  "read_time": "2 min read",
+  "category": "Videos",
+  "category_slug": "videos",
+  "url": "posts/yt-fhbncxmtuye.html",
+  "image": "https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?q=80&w=1200&auto=format&fit=crop"
+ },
+ {
   "slug": "surah-yasin-heart-of-the-quran",
   "title": "Surah Yasin: The Heart of the Quran",
   "excerpt": "Loved as the heart of the Quran, Surah Yasin opens with an oath and ends with a promise — a greeting of peace from a Merciful Lord.",
