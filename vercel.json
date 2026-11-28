@@ -1,6 +1,16 @@
 {
   "redirects": [
     {
+      "source": "/posts/dhul-qarnayn-traveller-who-built-the-wall.html",
+      "destination": "/posts/dhul-qarnayn-just-ruler-east-west.html",
+      "permanent": true
+    },
+    {
+      "source": "/posts/dhul-qarnayn-traveller-who-built-the-wall",
+      "destination": "/posts/dhul-qarnayn-just-ruler-east-west.html",
+      "permanent": true
+    },
+    {
       "source": "/academy/:path*",
       "destination": "https://razia-azeem-academy-raziaazeem285-26.vercel.app/:path*",
       "permanent": true
